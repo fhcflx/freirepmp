@@ -1,0 +1,396 @@
+UID,sex,age,follow,survival,histo,who.g,topo,origin,ecog,lpps,ct1,rt1,surg1,ct2,rt2,surg2,ct3,ct4,ct5
+1,1,3921,317,1,Astrocitoma anaplasico,3,Diencefalo,Paraipaba,NA,NA,1,0,2,1,3950,,2,0,0
+2,1,433,3807,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Cedro,NA,NA,2,0,1,1,0,,0,0,0
+3,0,486,91,1,Astrocitoma,2,Ponte-bulbo focal,Itapipoca,NA,NA,1,0,2,0,0,,0,0,0
+4,0,1140,65,1,Meduloblastoma,4,Cerebelo,Itarema,NA,NA,2,0,2,0,0,,0,0,0
+5,0,3915,1555,1,Craniofaringeoma,1,Supraselar,Fortaleza,NA,NA,0,0,2,0,0,,0,0,0
+6,1,4094,143,1,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Morada Nova,NA,NA,2,5400,2,0,0,,0,0,0
+7,0,4670,4219,0,Germinoma,4,Hemisferio E,Crato,NA,NA,4,4500,2,0,0,,0,0,0
+8,1,2891,3710,0,Meduloblastoma,4,Cerebelo,Caucaia,NA,NA,2,7840,1,0,0,,0,0,0
+9,0,2632,726,1,Astrocitoma anaplasico,3,Ponte,Fortaleza,NA,NA,1,6000,2,0,0,,0,0,0
+10,0,2283,4603,0,Meduloblastoma,4,Cerebelo,Abaiara,NA,NA,2,5400,2,7,0,,0,0,0
+11,0,2083,3756,0,Ependimoma,2,IV_Vent,Itapaje,NA,NA,1,5040,1,0,0,,0,0,0
+12,0,2110,4180,0,Meduloblastoma,4,Cerebelo,Capistrano,NA,NA,2,5400,2,0,0,,0,0,0
+13,0,4717,4679,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,1,NA,0,0,2,0,0,,0,0,0
+14,1,4084,3778,0,Meduloblastoma,4,Cerebelo,Fortaleza,NA,NA,2,5400,1,0,0,,0,0,0
+15,0,3390,256,2,Meduloblastoma,4,Cerebelo,Fortaleza,NA,NA,2,5400,1,0,0,,0,0,0
+16,0,2817,12,1,Meduloblastoma,4,Cerebelo,Fortaleza,NA,NA,2,0,2,0,0,,0,0,0
+17,0,658,4138,0,Meduloblastoma,4,Cerebelo,Itapipoca,NA,NA,2,5400,1,0,0,,0,0,0
+18,0,2113,4929,0,Meningioma,1,Temporal,Quiterianopolis,NA,NA,0,5400,2,1,0,,0,0,0
+19,0,3607,160,3,Meduloblastoma,4,Cerebelo vermis,Massape,NA,NA,2,0,1,0,0,,0,0,0
+20,0,3066,399,1,Ependimoma,2,IV_Vent,Pentecoste,NA,NA,0,5400,2,0,0,,0,0,0
+21,0,3658,298,1,Coriocarcinoma,4,Pineal,Ubajara,NA,NA,4,5400,1,0,0,,0,0,0
+22,0,2654,2314,1,Meduloblastoma,4,Cerebelo,Fortaleza,NA,NA,2,9640,1,0,0,2,0,0,0
+23,0,4409,951,1,Unknown,NA,Supraselar,Juazeiro do Norte,NA,NA,1,0,0,0,0,,0,0,0
+24,1,4640,265,1,Unknown,NA,Ponte,Fortaleza,NA,NA,1,6000,0,0,0,,0,0,0
+25,0,235,5620,0,Astrocitoma difuso/fibrilar,2,Diencefalo,Guaiuba,0,100,1,5.400,1,4,0,,0,0,
+26,0,2018,5002,0,Astrocitoma difuso/fibrilar,2,Tronco cerebral - mesencéfalo,Independencia,2,50,1,5.400,2,0,0,,0,0,
+27,1,2232,4179,0,Unknown,NA,Ponte focal,Fortaleza,3,40,1,0,0,2,0,,0,0,
+28,0,1640,424,1,Meduloblastoma classico,4,Cerebelo,Caucaia,0,0,2,0,1,0,0,,0,0,
+29,1,1275,540,1,Meduloblastoma classico,4,Cerebelo,Horizonte,1,80,2,0,1,0,0,,0,0,
+30,1,785,273,3,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Itapipoca,0,0,2,0,1,13,0,0,9,0,0
+31,0,3622,478,2,Meduloblastoma classico,4,Cerebelo,Capistrano,1,80,2,5.400,1,1,0,0,13,9,0
+32,1,3837,898,1,Astrocitoma anaplasico,3,Gliomatose,Itapipoca,1,80,1,0,2,9,0,0,0,0,0
+33,1,2308,4270,0,Craniofaringioma,1,Diencefalo,Barbalha,1,0,0,0,2,0,0,0,0,0,0
+34,0,2023,4052,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,1,0,2,5.400,1,0,0,0,0,0,0
+35,0,2132,291,3,Astrocitoma difuso/fibrilar,2,Cerebelo,Fortaleza,0,0,1,0,1,0,0,0,0,0,0
+36,0,3526,37,1,Glioblastoma,4,Temporal,Fortaleza,1,0,0,0,2,0,0,0,0,0,0
+37,1,679,96,2,Astrocitoma pilocitico,1,Diencefalo,Eusebio,0,0,1,0,2,13,0,2,0,0,0
+38,0,1610,191,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,0,1,0,0,0,0,0,0
+39,1,4511,389,1,Unknown,NA,Tronco cerebral - mesencéfalo,Fortaleza,0,0,1,6.000,0,0,0,0,0,0,0
+40,1,3243,2978,0,Meningioma atipico,2,Gliomatose,Fortaleza,0,0,0,0,1,0,0,0,0,0,0
+41,0,2091,178,1,Unknown,NA,DIPG,Acopiara,0,0,1,0,0,0,0,0,0,0,0
+42,0,5202,3916,3,Astrocitoma pilocitico,1,Cerebelo,Itapaje,0,0,0,0,1,0,0,0,0,0,0
+43,1,2238,3815,0,Astrocitoma pilocitico,1,Cerebelo,Pindoretama,0,0,1,0,1,0,0,0,0,0,0
+44,1,2164,151,1,Unknown,NA,Ponte focal,Jucas,0,0,1,0,0,0,0,1,0,0,0
+45,1,1608,53,1,Astrocitoma anaplasico,3,DIPG,Sobral,0,0,1,0,2,0,0,0,0,0,0
+46,0,2082,3107,0,Meduloblastoma classico,4,Cerebelo,Itapaje,0,0,2,8.000,1,0,0,0,0,0,0
+47,0,3339,729,1,Ependimoma,2,Ventriculo Lat,Horizonte,0,0,1,0,2,0,0,0,0,0,0
+48,1,1422,3618,0,Astrocitoma pilocitico,1,Diencefalo,Iguatu,0,0,1,0,2,0,0,0,0,0,0
+49,0,2625,107,1,Unknown,NA,DIPG,Baturite,0,0,1,0,0,0,0,0,0,0,0
+50,1,3436,162,1,Unknown,NA,DIPG,Fortaleza,0,0,1,0,0,0,0,0,0,0,0
+51,0,4104,2821,0,Pineoblastoma,4,Diencefalo,Fortaleza,0,0,2,0,1,0,0,0,0,0,0
+52,0,1108,110,1,Tumor de celulas germinativas SOE,4,Diencefalo,Fortaleza,0,0,4,0,0,0,0,0,0,0,0
+53,0,2640,2067,2,Astrocitoma pilocitico,1,Órbita - nervo óptico,Sao Benedito,0,0,1,5.400,2,0,0,0,0,0,0
+54,0,2809,3610,1,Meduloblastoma classico,4,Cerebelo,Parambu,0,0,2,5.500,1,0,0,0,0,0,0
+55,1,1724,2786,0,Glioma SOE,2,Órbita - nervo óptico,Forquilha,0,0,1,0,1,0,0,0,0,0,0
+56,1,1610,15,2,Unknown,NA,Diencefalo,Fortaleza,0,0,4,0,0,0,0,0,0,0,0
+57,1,2740,42,1,Craniofaringioma,1,Diencefalo,Fortaleza,0,0,27,5.400,2,0,0,0,0,0,0
+58,0,1782,3394,0,Astrocitoma difuso/fibrilar,2,Frontal,Moraujo,0,0,0,0,1,0,0,0,0,0,0
+59,0,2198,1284,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,50,2,0,1,0,0,0,0,0,0
+60,0,2585,150,1,Ependimoma anaplasico,3,Ventriculo Lat,Fortaleza,0,0,0,5.400,2,0,0,0,0,0,0
+61,0,5497,337,1,Meduloblastoma classico,4,Cerebelo,Tarauaca,0,0,2,5.400,1,0,0,0,0,0,0
+62,0,1032,562,1,Ependimoma,2,IV_Vent,Fortaleza,4,10,1,0,1,0,0,0,0,0,0
+63,1,305,39,1,Sarcoma granulocítico,4,Medula espinhal - lesao sobreposta,Fortaleza,0,0,27,0,2,0,0,0,0,0,0
+64,1,672,21,1,Glioblastoma,4,Gliomatose,Granjeiro,0,0,0,0,2,0,0,0,0,0,0
+65,0,3448,1696,1,Craniofaringioma,1,Diencefalo,Tiangua,0,0,27,0,2,0,0,0,0,0,0
+66,0,2071,285,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,0,2,3,0,0,0,0,0
+67,0,3556,3131,0,Craniofaringioma,1,Diencefalo,Itapaje,0,0,0,5.400,2,0,0,0,0,0,0
+68,1,2899,30,2,Craniofaringioma,1,Diencefalo,Fortaleza,0,0,0,0,2,0,0,0,0,0,0
+69,1,4230,274,2,Astrocitoma difuso/fibrilar,2,DIPG,Eusebio,3,40,1,5.400,2,0,0,0,0,0,0
+70,0,3042,3268,0,Astrocitoma pilocitico,1,Diencefalo,Capistrano,0,0,1,5.400,2,0,0,0,0,0,0
+71,1,3259,4033,0,Ependimoma,2,Ventriculo Lat,Fortaleza,0,0,11,6.000,1,0,0,0,0,0,0
+72,0,1641,381,1,Craniofaringioma,1,Diencefalo,Tiangua,0,0,0,0,1,0,0,0,0,0,0
+73,0,4361,1026,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,3.600,2,0,0,0,0,0,0
+74,0,1871,277,1,Fibrossarcoma infantil,2,Frontal,Maracanau,0,0,1,0,1,0,0,0,0,0,0
+75,0,1310,2579,0,Meduloblastoma classico,4,Cerebelo,Eusebio,0,0,2,5.400,1,11,0,0,0,0,0
+76,1,2672,3700,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,1,80,2,5.520,1,0,5400,1,0,0,0
+77,1,3453,1263,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,5.400,1,0,0,0,0,0,0
+78,1,3419,2758,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,3.000,2,11,0,0,0,0,0
+79,0,2160,246,1,Unknown,NA,DIPG,Caucaia,0,0,1,5.040,0,0,0,0,0,0,0
+80,1,3604,227,1,Unknown,NA,DIPG,Iracema,0,0,1,5.400,0,0,0,0,0,0,0
+81,1,5600,3373,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,3,40,0,0,1,13,0,2,0,0,0
+82,1,2810,708,1,Unknown,NA,DIPG,Fortaleza,3,40,1,5.400,0,3,0,0,0,0,0
+83,1,4835,295,1,Unknown,NA,Diencefalo,Beberibe,0,0,0,0,0,0,0,0,0,0,0
+84,1,2128,2050,1,Ependimoma anaplasico,3,IV_Vent,Fortaleza,0,0,2,5.580,2,0,0,0,0,0,0
+85,0,2993,145,1,Unknown,NA,DIPG,Fortaleza,0,0,1,1.800,0,11,0,0,0,0,0
+86,0,6161,108,2,Astrocitoma difuso/fibrilar,2,Gliomatose,Camocim,0,0,1,0,1,0,0,0,0,0,0
+87,0,4520,545,2,Meduloblastoma classico,4,Cerebelo,Quixeramobim,0,0,2,5.400,1,3,0,0,0,0,0
+88,1,2296,2911,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,0,5.400,1,0,0,0,0,0,0
+89,1,333,69,1,Ependimoma,3,IV_Vent,Fortaleza,0,0,1,0,2,11,0,0,0,0,0
+90,1,3354,618,1,Meduloblastoma classico,4,Cerebelo,Jaguaribe,0,0,2,5.400,1,0,0,0,0,0,0
+91,0,1989,405,1,Ependimoma,2,IV_Vent,Fortaleza,0,0,1,5.400,1,0,0,0,0,0,0
+92,1,3616,215,1,Ependimoma anaplasico,3,Ventriculo Lat,Fortaleza,0,0,1,0,1,0,0,0,0,0,0
+93,0,3936,3003,0,Unknown,NA,Tronco cerebral - bulbo,Fortaleza,0,0,0,5.400,0,0,0,1,0,0,0
+94,0,2475,370,2,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,0,2,0,1,0,0,0,0,0,0
+95,1,1690,2442,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Aurora,0,0,0,0,1,3,0,0,0,0,0
+96,0,2233,212,1,Unknown,NA,DIPG,Sao Benedito,0,0,1,5.400,0,2,0,0,0,0,0
+97,1,4433,2593,0,Craniofaringioma,1,Diencefalo,Santana Do Acarau,0,0,0,5.400,2,2,0,0,0,0,0
+98,1,3574,3600,0,Meningioma meningotelial,1,Base do cranio,Fortaleza,0,100,22,5.400,2,0,0,0,0,0,0
+99,0,2211,3416,0,Unknown,NA,Ponte focal,Quixada,0,100,1,5.400,0,0,0,0,0,0,0
+100,0,2721,2580,0,Malformação cavernosa (cavernoma),1,IV_Vent,Itapipoca,0,0,0,0,2,0,0,1,0,0,0
+101,0,4181,122,2,Tumor de celulas germinativas SOE,4,Diencefalo,Cascavel,4,10,4,0,2,0,0,0,0,0,0
+102,0,2212,1132,2,Meduloblastoma classico,4,Cerebelo,Pacajus,0,0,2,5.400,1,0,0,0,0,0,0
+103,1,1813,1252,1,Astrocitoma anaplasico,3,Gliomatose,Maracanau,0,0,1,5.400,2,0,0,2,0,0,0
+104,1,2522,85,2,Germinoma,4,Ventriculo Lat,Tabuleiro Do Norte,0,0,4,0,2,11,0,0,13,0,0
+105,0,4080,730,1,Ependimoma,2,IV_Vent,Madalena,0,0,11,5.400,1,0,0,0,0,0,0
+106,1,3396,2941,0,Unknown,NA,Diencefalo,Fortaleza,0,0,1,0,0,0,0,0,0,0,0
+107,0,3897,130,2,Meduloblastoma classico,4,Cerebelo,Tiangua,0,0,2,5.400,1,11,0,1,0,0,0
+108,1,1049,2812,1,Ependimoma anaplasico,3,Gliomatose,Ubajara,0,100,1,5.400,2,11,0,0,27,0,0
+109,1,2447,120,1,Unknown,NA,DIPG,Maranguape,0,0,0,0,0,0,0,0,0,0,0
+110,1,6419,2106,1,Meningioma transicional,1,Gliomatose,Carire,0,0,0,6.000,1,0,0,0,0,0,0
+111,1,177,2596,1,Unknown,NA,Diencefalo,Fortaleza,1,80,1,0,0,0,0,0,0,0,0
+112,1,2916,3151,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,0,0,0,0,1,0,0,0,0,0,0
+113,0,2919,210,1,Unknown,NA,DIPG,Pedra Branca,4,0,0,2.160,0,11,0,0,13,9,13
+114,1,4087,3054,0,Unknown,NA,Gliomatose,Maranguape,0,100,1,0,0,0,0,0,0,0,0
+115,1,3143,2615,0,Unknown,NA,Diencefalo,Crateus,0,0,1,0,2,0,0,1,0,0,0
+116,1,3736,153,1,Unknown,NA,DIPG,Fortaleza,0,0,1,0,0,0,0,0,0,0,0
+117,1,1992,159,1,Unknown,NA,DIPG,Hidrolandia,0,0,1,0,0,0,0,0,0,0,0
+118,0,2699,54,2,Tumor de celulas germinativas SOE,4,Diencefalo,Fortaleza,0,100,4,0,1,0,0,0,0,0,0
+119,1,1818,2368,0,Astrocitoma pilocitico,1,Ventriculo Lat,Fortaleza,0,100,0,0,1,0,0,0,0,0,0
+120,0,1196,2994,0,Unknown,NA,Tronco cerebral - mesencéfalo,Meruoca,1,80,1,5.400,0,0,0,0,0,0,0
+121,1,5351,80,1,Unknown,NA,Tronco cerebral - mesencéfalo,Tiangua,2,60,1,0,0,0,0,0,0,0,0
+122,1,1058,149,1,Unknown,NA,DIPG,Sobral,0,0,1,5.400,0,0,0,0,0,0,0
+123,0,5087,259,1,Glioblastoma,4,Frontal,Fortaleza,0,100,1,6.600,1,0,0,0,0,0,0
+124,0,4078,2356,0,Unknown,NA,Tronco cerebral - mesencéfalo,Lavras Da Mangabeira,0,100,0,5.400,0,0,0,0,0,0,0
+125,0,1458,174,2,Ependimoma,2,IV_Vent,Fortaleza,4,20,0,0,2,9,0,0,0,0,0
+126,0,2028,352,1,Unknown,NA,Diencefalo,Fortaleza,2,60,1,5.400,0,0,0,0,0,0,0
+127,0,28,56,1,Tumor de celulas germinativas SOE,4,Gliomatose,Eusebio,4,20,4,0,0,0,0,0,0,0,0
+128,1,65,135,1,Meningioma atipico,2,Gliomatose,Itarema,3,40,0,0,2,1,0,0,0,0,0
+129,0,5364,125,2,Meduloblastoma de grandes celulas/anaplasico,4,Cerebelo,Umirim,4,20,0,0,1,0,0,0,0,0,0
+130,0,3047,434,2,Ependimoma anaplasico,3,IV_Vent,Fortaleza,3,40,11,5.400,1,0,0,0,0,0,0
+131,0,6430,37,2,Oligodendroglioma anaplasico,3,Diencefalo,Bela Cruz,3,40,0,0,2,0,0,0,0,0,0
+132,0,1613,2963,0,Astrocitoma pilocitico,1,Cerebelo,Caucaia,0,100,0,0,1,0,0,0,0,0,0
+133,0,30,1863,0,Meduloblastoma classico,4,Cerebelo,Quixada,2,60,11,0,2,0,0,0,0,0,0
+134,1,2573,2922,0,Meningioma meningotelial,1,Base do cranio,Boa Vista,1,0,24,5.400,2,0,0,0,0,0,0
+135,0,239,61,1,Unknown,NA,Cerebelo,Ararende,4,20,0,0,0,0,0,0,0,0,0
+136,1,5971,354,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Fortaleza,0,100,0,5.600,1,0,0,0,0,0,0
+137,0,4021,917,1,Unknown,NA,DIPG,Itapipoca,1,80,1,5.400,0,0,0,0,0,0,0
+138,1,2282,2333,0,Unknown,NA,Ponte focal,Barreira,4,20,1,5.400,0,11,0,0,0,0,0
+139,0,3913,2891,0,Ependimoma anaplasico,3,IV_Vent,Fortaleza,0,100,0,5.400,1,25,0,2,22,0,0
+140,1,4442,1814,0,Schwannoma,1,Medula toracica,Jucas,2,50,0,0,2,0,0,0,0,0,0
+141,1,5860,1092,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,2,60,11,5.400,2,0,0,0,0,0,0
+142,0,1622,182,2,Meduloblastoma classico,4,Cerebelo,Amontada,1,80,2,5.400,1,11,0,0,0,0,0
+143,1,3332,3077,0,Astrocitoma pilocitico,1,Diencefalo,Martinopole,1,80,1,5.400,2,24,0,0,0,0,0
+144,0,6546,2249,0,Astrocitoma pilocitico,1,Cerebelo,Morava Nova,0,100,0,0,1,0,0,0,0,0,0
+145,0,121,2107,0,Ependimoma,2,Ventriculo Lat,Caucaia,0,100,11,0,1,0,0,1,0,0,0
+146,1,2074,2430,0,Ependimoma,2,Medula toracica,Fortaleza,2,60,1,5.400,2,0,0,0,0,0,0
+147,0,2460,114,2,Meduloblastoma classico,4,Cerebelo,Pindoretama,1,80,2,5.400,1,0,0,0,0,0,0
+148,1,779,3037,2,Unknown,NA,Diencefalo,Fortaleza,1,80,1,0,2,0,0,0,0,0,0
+149,0,4222,1546,0,Adenoma de hipofise,1,Diencefalo,Fortaleza,0,100,0,5.400,2,0,0,0,0,0,0
+150,1,6451,132,1,Glioblastoma,4,Gliomatose,Alto Santo,3,40,1,0,2,0,0,0,0,0,0
+151,0,4312,1351,0,Ependimoma anaplasico,3,IV_Vent,Fortaleza,0,100,11,5.400,2,0,0,2,0,0,0
+152,0,4516,1745,0,Unknown,NA,Diencefalo,Pacatuba,0,100,1,5.400,0,0,0,0,0,0,0
+153,1,3733,2048,1,Ependimoma,2,IV_Vent,Fortaleza,2,60,11,5.400,1,0,0,0,0,0,0
+154,0,1286,2094,0,Papiloma de plexo coroide,1,Ventriculo Lat,Fortaleza,0,100,0,0,1,0,0,2,0,0,0
+155,1,711,208,1,Meduloblastoma classico,4,Cerebelo,Pacoti,1,80,11,0,2,0,0,0,0,0,0
+156,1,1780,180,2,Meduloblastoma classico,4,Cerebelo,Iguatu,2,60,2,5.400,1,0,0,0,0,0,0
+157,0,4895,307,1,Unknown,NA,DIPG,Miraima,1,80,1,5.400,0,0,0,0,0,0,0
+158,0,5792,78,2,Tumor de celulas germinativas SOE,4,Diencefalo,Forquilha,3,40,4,0,1,9,7200,1,0,0,0
+159,0,3129,141,1,Unknown,NA,DIPG,Catunda,0,0,1,5.400,0,0,0,0,0,0,0
+160,1,487,1727,0,Unknown,NA,Tronco cerebral - bulbo,Juazeiro Do Norte,4,20,1,0,0,0,0,0,0,0,0
+161,0,288,6,1,Unknown,NA,IV_Vent,Caucaia,4,20,1,0,0,0,0,0,0,0,0
+162,0,4689,1406,1,Unknown,NA,DIPG,Maracanau,0,0,1,5.400,0,11,0,0,0,0,0
+163,1,3243,2447,0,Glioma SOE,2,Ponte focal,Sobral,3,40,1,5.400,2,0,0,0,0,0,0
+164,1,4156,31,1,Unknown,NA,DIPG,Fortaleza,0,0,1,0,0,0,0,0,0,0,0
+165,0,3293,783,2,Meduloblastoma classico,4,Cerebelo,Fortaleza,2,60,2,5.400,1,13,0,0,0,0,0
+166,0,3285,2048,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,0,100,0,0,1,0,0,0,0,0,0
+167,0,3243,725,2,Meduloepitelioma,4,Cerebelo,Fortaleza,0,100,11,5.400,1,13,0,0,9,0,0
+168,0,4758,2649,0,Unknown,NA,Diencefalo,Russas,0,100,1,5.400,0,11,0,0,13,9,0
+169,1,1092,383,1,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Fortaleza,0,100,11,0,2,0,0,0,0,0,0
+170,0,2286,644,1,Astrocitoma pilomixoide,2,DIPG,Pacajus,2,60,1,5.400,2,0,0,0,0,0,0
+171,1,1324,1868,0,Astrocitoma pilocitico,1,Cerebelo,Maracanau,0,100,0,0,1,0,0,0,0,0,0
+172,1,3611,2487,0,Oligodendroglioma,2,Diencefalo,Apuiares,1,90,13,0,2,1,0,0,9,0,0
+173,1,5557,1778,2,Astrocitoma pilocitico,1,Tronco cerebral - bulbo,Parambu,3,30,1,5.400,2,11,0,0,0,0,0
+174,0,1850,223,1,Unknown,NA,DIPG,Barro,0,0,1,5.040,0,0,0,0,0,0,0
+175,0,5270,1624,0,Meningioma,1,Gliomatose,Pacatuba,2,60,0,0,1,13,0,0,0,0,0
+176,0,1565,88,1,Tumor teratoide-rabdoide atipico,4,Gliomatose,Quixada,4,20,11,0,2,0,0,0,0,0,0
+177,0,4474,2020,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,100,2,5.460,1,0,0,0,0,0,0
+178,0,3622,2279,0,Ganglioglioma atipico,2,Cerebelo,Aracoiaba,1,80,1,0,1,0,0,0,0,0,0
+179,0,4979,646,2,Carcinoma de plexo coroide,3,Ventriculo Lat,Iguatu,0,100,1,5.400,2,11,0,0,0,0,0
+180,0,3718,74,1,Unknown,NA,DIPG,Sao Benedito,0,0,1,0,0,0,0,0,0,0,0
+181,0,5904,1872,0,Astrocitoma pilocitico,1,Diencefalo,Fortaleza,0,100,1,0,2,0,0,0,0,0,0
+182,0,3628,1410,0,Meduloblastoma classico,4,Cerebelo,Barbalha,2,60,2,5.400,1,0,0,0,0,0,0
+183,1,2635,2490,0,Craniofaringioma,1,Diencefalo,Madalena,0,100,0,4.500,2,0,0,1,0,0,0
+184,1,3283,1772,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,1,80,2,5.400,2,0,0,1,0,0,0
+185,0,5946,1157,2,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Pacatuba,0,100,11,5.400,1,0,0,0,0,0,0
+186,1,1216,408,1,Unknown,NA,DIPG,Fortaleza,0,0,1,5.400,0,0,0,0,0,0,0
+187,0,3500,2156,0,Oligodendroglioma,2,Temporal,Fortaleza,2,60,1,5.400,2,0,0,0,0,0,0
+188,1,1453,419,1,Meduloblastoma classico,4,Cerebelo,Missao Velha,1,80,11,0,2,0,0,2,0,0,0
+189,0,3065,1356,0,Malformação cavernosa (cavernoma),1,Frontal,Juazeiro Do Norte,0,100,0,0,1,0,0,1,0,0,0
+190,1,2267,1349,2,Meduloblastoma classico,4,Cerebelo,Fortaleza,1,80,11,5.300,1,9,0,1,3,0,0
+191,1,2700,531,1,Unknown,NA,DIPG,Pacuja,3,40,1,5.400,0,11,0,0,0,0,0
+192,1,3069,427,1,Unknown,NA,DIPG,Aracoiaba,3,40,1,5.400,0,0,0,0,0,0,0
+193,0,4761,35,1,Unknown,NA,Cerebelo,Aracati,0,0,0,0,0,0,0,0,0,0,0
+194,0,2816,2434,0,Astrocitoma pilocitico,1,Ponte focal,Fortaleza,0,100,1,5.400,2,0,0,0,0,0,0
+195,1,2326,585,1,Meduloepitelioma,4,Cerebelo,Caninde,3,40,11,5.400,1,0,0,0,0,0,0
+196,0,5069,1836,0,Astrocitoma pilocitico,1,Cerebelo,Itapaje,1,80,0,0,1,13,0,0,0,0,0
+197,0,485,1834,0,Papiloma de plexo coroide,1,Ventriculo Lat,Fortaleza,0,100,0,0,1,11,0,0,0,0,0
+198,0,265,167,1,Ganglioglioma anaplasico,3,Diencefalo,Fortaleza,4,20,1,0,2,0,0,0,0,0,0
+199,0,4266,1441,0,Astrocitoma pilocitico,1,Cerebelo,Quixada,0,100,0,0,1,9,0,0,0,0,0
+200,0,1174,1596,0,Astrocitoma pilomixoide,2,Temporal,Barreira,0,100,1,0,2,3,0,0,0,0,0
+201,0,4098,1657,0,Astrocitoma pilocitico,2,Medula cervical,Itapipoca,0,100,1,0,2,0,0,0,0,0,0
+202,0,4804,2304,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Aiuaba,3,40,11,5.400,2,0,0,0,0,0,0
+203,0,3560,765,3,Astrocitoma pilomixoide,2,Cerebelo,Fortaleza,0,100,0,0,1,11,0,0,0,0,0
+204,1,795,198,2,Astrocitoma difuso/fibrilar,2,Cerebelo,Caucaia,0,100,0,0,1,0,0,0,0,0,0
+205,0,4921,648,1,Tumor neuroectodermico primitivo - PNET,4,Diencefalo,Boa Viagem,1,80,2,5.400,1,11,0,0,13,9,0
+206,1,2758,462,1,Unknown,NA,DIPG,Ico,0,0,1,5.400,0,0,0,0,0,0,0
+207,1,3406,2172,0,Oligodendroglioma,2,Temporal,Fortaleza,0,100,0,0,2,0,0,0,0,0,0
+208,0,1012,881,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Ico,0,100,0,0,1,0,0,0,0,0,0
+209,0,404,261,1,Tumor neuroectodermico primitivo - PNET,4,Gliomatose,Santana Do Acarau,2,60,11,0,2,0,0,0,0,0,0
+210,0,5424,175,1,Unknown,NA,DIPG,Aracoiaba,4,20,1,0,0,3,0,0,0,0,0
+211,1,2817,2211,0,Unknown,NA,Diencefalo,Mombaca,0,100,2,5.400,0,13,0,0,0,0,0
+212,1,5562,1058,0,Malformação cavernosa (cavernoma),1,Medula toracica,Caucaia,2,60,0,0,1,0,0,0,0,0,0
+213,1,271,168,1,Unknown,NA,Cerebelo,Morava Nova,4,10,0,0,0,0,0,1,0,0,0
+214,1,3013,1624,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,1,80,0,0,1,0,0,0,0,0,0
+215,1,5106,2136,0,Unknown,NA,Tronco cerebral - bulbo,Itarema,1,70,1,0,0,0,0,0,0,0,0
+216,0,1450,809,1,Meduloblastoma classico,4,Cerebelo,Tururu,3,30,2,5.400,1,9,0,0,0,0,0
+217,1,2458,585,1,Glioblastoma,4,Parietal,Fortaleza,1,80,9,6.600,1,0,0,0,0,0,0
+218,0,1925,178,2,Carcinoma embrionario,4,Diencefalo,Itapipoca,1,80,4,0,1,0,0,0,0,0,0
+219,1,1250,445,1,Ependimoma,2,IV_Vent,Oros,0,100,11,5.400,1,0,0,0,0,0,0
+220,1,1367,39,1,Unknown,NA,DIPG,Juazeiro Do Norte,4,10,0,0,0,11,0,0,0,0,0
+221,0,2490,944,0,Astrocitoma pilocitico,1,Cerebelo,Caninde,0,100,0,0,1,10,0,2,9,0,0
+222,0,4943,659,0,Ependimoma,2,Medula toracica,Fortaleza,3,40,0,5.040,1,0,0,0,0,0,0
+223,1,3314,1339,1,Unknown,NA,Diencefalo,Moraujo,2,60,1,5.400,0,13,0,0,0,0,0
+224,0,5276,2166,0,Astrocitoma difuso/fibrilar,2,Occipital,Sao Benedito,0,100,24,5.400,2,0,5400,0,0,0,0
+225,1,2465,288,1,Unknown,NA,DIPG,Fortaleza,4,10,1,5.400,0,0,0,0,0,0,0
+226,1,2403,923,2,Ependimoma,2,IV_Vent,Alcantaras,0,100,0,5.040,1,0,0,0,0,0,0
+227,1,4708,2000,0,Glioblastoma,4,Gliomatose,Icapui,0,100,9,6.600,1,0,0,0,0,0,0
+228,1,441,1829,0,Astrocitoma pilocitico,1,Tronco cerebral - mesencéfalo,Fortaleza,1,80,1,0,2,0,0,0,0,0,0
+229,0,827,1179,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Sobral,0,100,0,0,1,13,0,0,0,0,0
+230,0,2045,1971,1,Meduloblastoma classico,4,Cerebelo,Massape,0,0,2,5.400,2,0,0,0,0,0,0
+231,0,6130,979,0,Meningioma transicional,1,Frontal,Pacajus,4,20,0,0,1,0,0,0,0,0,0
+232,0,1529,192,1,Tumor de celulas germinativas SOE,4,Diencefalo,Camocim,2,60,0,0,1,0,0,0,0,0,0
+233,1,5780,363,1,Unknown,NA,DIPG,Fortaleza,1,80,1,5.400,0,0,0,2,0,0,0
+234,0,2531,1889,0,Papiloma de plexo coroide,1,Ventriculo Lat,Fortaleza,0,0,0,3.600,1,0,0,0,0,0,0
+235,0,6059,667,2,Meduloblastoma classico,4,Cerebelo,Amontada,4,10,11,0,1,0,0,0,0,0,0
+236,0,960,1356,0,Gangliocitoma,1,Diencefalo,Farias Brito,3,40,0,0,2,0,0,0,0,0,0
+237,0,3040,62,1,Ependimoma anaplasico,3,Medula lombar,Fortaleza,3,40,0,0,2,0,0,0,0,0,0
+238,0,2991,1174,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Pacatuba,0,100,0,0,2,9,0,2,0,0,0
+239,0,1906,220,1,Unknown,NA,DIPG,Maracanau,4,10,1,0,0,0,0,2,0,0,0
+240,0,5102,1351,0,Ependimoma,2,Ventriculo Lat,Lavras Da Mangabeira,1,80,0,5.400,1,0,0,0,0,0,0
+241,1,4468,1628,0,Astrocitoma difuso/fibrilar,2,Gliomatose,Guaiuba,1,70,1,0,2,0,0,0,0,0,0
+242,0,1372,31,1,Unknown,NA,Gliomatose,Apuiares,4,10,0,0,0,0,0,1,0,0,0
+243,1,1915,697,0,Astrocitoma difuso/fibrilar,2,Cerebelo,Russas,0,100,0,0,2,0,0,0,0,0,0
+244,0,436,1167,0,Astrocitoma pilocitico,1,Cerebelo,Maranguape,0,100,0,0,1,0,0,0,0,0,0
+245,0,3091,658,2,Glioblastoma,4,Parietal,Caucaia,0,100,10,4.500,2,0,0,0,0,0,0
+246,1,4571,668,1,Glioblastoma,4,Parietal,Ocara,1,80,10,6.000,1,0,0,0,0,0,0
+247,0,5194,1137,0,Tumor de celulas germinativas SOE,4,Diencefalo,Fortaleza,0,100,4,5.000,0,0,0,0,0,0,0
+248,0,3806,41,1,Unknown,NA,Gliomatose,Fortaleza,0,100,1,0,0,0,0,0,0,0,0
+249,0,1723,1253,0,Astrocitoma difuso/fibrilar,2,Medula cervical,Mossoro,3,40,0,0,1,0,0,0,0,0,0
+250,0,826,1323,0,Malformação cavernosa (cavernoma),1,Temporal,Pentecoste,0,100,0,0,1,0,0,0,0,0,0
+251,1,3305,1807,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Novo Oriente,1,80,11,5.400,2,9,0,0,27,0,0
+252,1,2135,1747,0,Astrocitoma subependimario de celulas gigantes,1,Gliomatose,Guaraciaba Do Norte,4,30,1,0,2,0,0,0,0,0,0
+253,1,959,1793,0,Tumor neuroectodermico primitivo - PNET,4,Gliomatose,Sobral,0,0,14,5.400,2,0,0,0,0,0,0
+254,0,3108,189,1,Ependimoma anaplasico,3,Ventriculo Lat,Fortaleza,2,60,27,0,2,0,0,0,0,0,0
+255,0,3169,1045,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Itatira,1,80,2,5.400,2,0,0,0,0,0,0
+256,0,3450,734,0,Ependimoma,2,Medula toracica,Fortaleza,3,40,0,4.900,1,0,0,0,0,0,0
+257,0,798,1507,0,Unknown,NA,Diencefalo,Solonopole,0,100,0,0,0,0,0,0,0,0,0
+258,0,2590,499,1,Meduloblastoma classico,4,Cerebelo,Caucaia,4,10,2,5.400,2,0,0,1,0,0,0
+259,1,4579,1568,0,Ependimoma,2,Ventriculo Lat,Fortaleza,0,100,0,5.400,1,0,0,0,0,0,0
+260,1,3514,976,1,Tumor teratoide-rabdoide atipico,4,Gliomatose,Pacatuba,1,80,2,5.400,1,0,0,0,0,0,0
+261,1,3140,475,1,Unknown,NA,DIPG,Aquiraz,3,40,1,5.400,0,0,0,0,0,0,0
+262,0,3645,1465,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,100,2,5.400,2,0,0,0,0,0,0
+263,1,4464,1690,0,Astrocitoma difuso/fibrilar,2,Tronco cerebral - mesencéfalo,Fortaleza,0,100,1,0,2,9,0,0,0,0,0
+264,1,5225,1785,0,Meduloblastoma classico,4,Cerebelo,Jaguaribe,1,80,2,5.400,1,0,0,0,0,0,0
+265,1,1602,370,1,Astrocitoma pilomixoide,2,Cerebelo,Pacatuba,3,40,1,0,2,9,0,0,0,0,0
+266,0,3099,1470,0,Astrocitoma difuso/fibrilar,2,Diencefalo,Fortaleza,1,80,1,0,2,9,0,0,0,0,0
+267,1,1618,368,1,Unknown,NA,DIPG,Itapipoca,3,40,10,5.400,0,0,0,0,0,0,0
+268,0,3145,419,1,Unknown,NA,DIPG,Chaval,3,40,1,5.400,0,0,0,0,0,0,0
+269,0,4743,1425,0,Glioblastoma,4,Frontal,Baturite,0,100,10,5.400,2,0,0,0,0,0,0
+270,0,2165,145,1,Unknown,NA,DIPG,Acopiara,4,20,1,5.400,0,9,0,0,0,0,0
+271,0,1321,379,1,Unknown,NA,DIPG,Bela Cruz,1,80,1,5.400,0,0,0,0,0,0,0
+272,0,2265,349,1,Unknown,NA,DIPG,Caninde,2,60,1,5.400,0,9,0,0,0,0,0
+273,1,2992,74,1,Unknown,NA,DIPG,Caninde,4,20,1,0,0,9,0,0,0,0,0
+274,1,2645,1430,0,Craniofaringioma,1,Diencefalo,Fortaleza,1,80,0,5.400,2,0,0,0,0,0,0
+275,1,2926,729,0,Astrocitoma pilomixoide,2,Cerebelo,Itapaje,1,80,0,0,2,0,0,0,0,0,0
+276,0,2248,1558,0,Astrocitoma difuso/fibrilar,2,Tronco cerebral - mesencéfalo,Fortaleza,0,100,1,0,2,11,0,0,0,0,0
+277,0,1451,1087,0,Germinoma,4,Ventriculo Lat,Caucaia,0,0,4,4.500,1,13,0,0,0,0,0
+278,1,3779,1346,0,Astrocitoma difuso/fibrilar,2,Frontal,Fortaleza,0,100,9,5.400,1,0,0,0,0,0,0
+279,1,3824,1707,1,Oligodendroglioma,2,Gliomatose,Ipu,1,80,1,0,2,0,5400,2,0,0,0
+280,0,1494,1491,0,Glioblastoma,4,Frontal,Beberibe,0,100,10,5.400,1,0,0,0,0,0,0
+281,1,5162,117,1,Unknown,NA,DIPG,Taua,3,40,1,5.400,0,13,0,0,9,0,0
+282,1,878,87,1,Ependimoma anaplasico,3,IV_Vent,Barbalha,4,20,0,0,2,0,0,1,0,0,0
+283,1,628,216,1,Glioblastoma,4,Frontal,Quixada,2,60,14,0,2,0,0,2,0,0,0
+284,1,4694,345,0,Unknown,NA,Diencefalo,Cedro,0,100,0,0,0,0,0,0,0,0,0
+285,1,1027,56,2,Astrocitoma difuso/fibrilar,2,Cerebelo,Quixeramobim,4,20,0,0,1,9,5400,0,0,0,0
+286,0,5166,766,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,100,2,5.400,1,0,0,0,0,0,0
+287,1,3120,75,1,Melanoma,4,Diencefalo,Itatira,4,20,0,0,2,0,0,0,0,0,0
+288,0,2102,483,2,Meduloblastoma classico,4,Cerebelo,Guaraciaba Do Norte,0,90,0,5.400,1,0,0,0,0,0,0
+289,0,6456,267,0,Meningioma,1,Gliomatose,Iguatu,1,80,0,0,1,0,0,0,0,0,0
+290,1,1748,1405,0,Ependimoma,2,IV_Vent,Fortaleza,3,40,0,5.400,2,0,0,0,0,0,0
+291,1,2872,1394,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,100,12,5.400,1,0,0,0,0,0,0
+292,1,1153,281,2,Meduloblastoma classico,4,Cerebelo,Itapipoca,4,10,2,5.400,1,0,0,0,0,0,0
+293,0,345,1155,2,Unknown,NA,Diencefalo,Palmacia,0,0,0,0,0,0,0,0,0,0,0
+294,0,2013,792,1,Glioblastoma,4,Gliomatose,Fortaleza,0,100,9,6.000,2,0,0,0,0,0,0
+295,0,5490,1056,0,Meduloblastoma classico,4,Cerebelo,Reriutaba,0,0,2,5.400,1,0,0,0,0,0,0
+296,0,5060,24,1,Melanoma,4,Frontal,Fortaleza,0,100,0,0,2,0,0,0,0,0,0
+297,1,3238,702,1,Melanoma,4,Angulo ponto-cerebelar,Parambu,3,30,0,4.000,2,0,0,0,0,0,0
+298,0,2051,36,1,Unknown,NA,DIPG,Quiterianopolis,3,40,1,0,0,1,0,0,13,0,0
+299,1,5677,69,3,Unknown,NA,Diencefalo,Fortaleza,1,80,0,0,0,9,5400,2,20,0,0
+300,1,4349,46,1,Astrocitoma anaplasico,3,Diencefalo,Pindoretama,2,60,10,720,2,0,0,0,0,0,0
+301,1,976,666,0,Ependimoma,2,IV_Vent,Acarau,0,100,0,5.400,1,0,0,0,0,0,0
+302,1,5298,1246,0,Astrocitoma pilomixoide,2,Diencefalo,Fortaleza,0,100,9,0,2,0,0,0,0,0,0
+303,0,5114,107,2,Ependimoma,2,IV_Vent,Fortaleza,2,60,0,1.800,1,0,0,0,0,0,0
+304,0,5478,777,0,Meduloblastoma classico,4,Cerebelo,Caucaia,3,50,2,5.400,2,0,0,0,0,0,0
+305,0,658,723,0,Ependimoma,2,IV_Vent,Fortaleza,0,100,0,0,1,0,0,0,0,0,0
+306,1,2074,577,1,Unknown,NA,Tronco cerebral - bulbo,Fortaleza,1,70,10,5.400,0,0,0,0,0,0,0
+307,1,4208,252,0,Unknown,NA,Diencefalo,Fortaleza,0,100,0,0,0,0,0,0,0,0,0
+308,1,4373,640,1,Unknown,NA,DIPG,Aracati,2,60,1,5.400,0,0,0,0,0,0,0
+309,0,1412,1056,0,Astrocitoma difuso/fibrilar,2,Medula lombar,Aquiraz,1,80,0,0,2,0,0,0,0,0,0
+310,1,883,1009,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Sao Luis Do Curu,2,50,12,5.400,2,0,0,0,0,0,0
+311,0,2366,151,1,Astrocitoma pilocitico,1,DIPG,Ibaretama,1,70,0,5.400,2,9,0,0,0,0,0
+312,1,1366,513,1,Unknown,NA,DIPG,Iguatu,1,80,9,5.400,0,0,0,0,0,0,0
+313,1,1743,641,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Uruburetama,4,10,11,5.400,2,9,1800,0,0,0,0
+314,0,1180,392,2,Ependimoma anaplasico,3,IV_Vent,Jucas,3,40,2,5.400,2,0,0,0,0,0,0
+315,1,4809,1267,0,Glioblastoma,4,Gliomatose,Ocara,3,30,9,6.000,2,0,0,1,0,0,0
+316,0,2864,127,0,Astrocitoma pilomixoide,2,Diencefalo,Fortaleza,1,80,0,0,1,0,0,0,0,0,0
+317,0,1280,78,2,Unknown,NA,Diencefalo,Fortaleza,2,70,10,5.400,0,20,4500,0,0,0,0
+318,1,1979,708,1,Astrocitoma difuso/fibrilar,2,DIPG,Reriutaba,1,70,10,1.440,2,0,0,0,0,0,0
+319,1,617,1096,0,Ependimoma anaplasico,3,IV_Vent,Fortaleza,1,70,14,5.400,2,0,0,0,0,0,0
+320,1,3403,236,1,Ganglioglioma atipico,2,Gliomatose,Iraucuba,0,90,0,0,2,0,0,0,0,0,0
+321,0,1031,592,0,Astrocitoma pilocitico,1,Cerebelo,Ibicuitinga,1,80,0,0,1,0,0,0,0,0,0
+322,1,1892,532,1,Unknown,NA,DIPG,Juazeiro Do Norte,0,90,1,5.400,0,0,0,0,0,0,0
+323,1,4077,1037,0,Glioblastoma,4,Gliomatose,Carire,0,90,10,5.400,2,0,4500,0,0,0,0
+324,1,2530,629,1,Unknown,NA,DIPG,Lavras Da Mangabeira,1,70,10,5.400,0,0,0,0,0,0,0
+325,0,3554,891,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Limoeiro,0,100,16,5.400,2,0,0,0,0,0,0
+326,1,604,1014,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Fortaleza,4,10,14,5.400,1,0,0,0,0,0,0
+327,1,1110,299,2,Meduloblastoma classico,4,Cerebelo,Fortaleza,3,40,12,5.400,2,9,2700,0,20,0,0
+328,1,1447,762,0,Unknown,NA,Ponte focal,Fortaleza,0,100,10,5.400,0,9,4500,2,0,0,0
+329,1,2064,159,2,Unknown,NA,DIPG,Pedra Branca,0,0,10,5.400,0,0,0,0,0,0,0
+330,1,2233,936,0,Meduloblastoma classico,4,Cerebelo,Paraipaba,0,100,12,5.400,1,0,0,2,0,0,0
+331,0,4136,479,0,Ganglioglioma anaplasico,3,Frontal,Ibicuitinga,0,100,0,5.400,1,0,0,0,0,0,0
+332,1,1048,981,0,Ependimoma,2,Gliomatose,Penaforte,3,40,17,5.400,2,0,0,0,0,0,0
+333,1,2413,983,0,Astrocitoma pilocitico,1,Tronco cerebral - mesencéfalo,Crato,1,80,0,0,2,0,0,0,0,0,0
+334,1,3030,479,1,Unknown,NA,DIPG,Maracanau,1,80,10,5.400,0,0,0,0,0,0,0
+335,1,3197,310,1,Unknown,NA,DIPG,Frecheirinha,1,80,9,5.400,0,0,0,0,0,0,0
+336,1,1372,648,0,Pineoblastoma,4,Diencefalo,Crato,3,40,16,5.400,2,0,0,1,0,0,0
+337,0,5733,448,1,Meduloblastoma classico,4,Cerebelo,Quixada,0,100,12,5.400,1,13,0,2,0,0,0
+338,1,4160,189,2,Ependimoma anaplasico,3,IV_Vent,Maracanau,1,70,17,5.400,2,0,0,2,0,0,0
+339,1,4980,917,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,1,80,12,5.400,1,0,0,0,0,0,0
+340,0,3595,572,0,Unknown,NA,Diencefalo,Graca,1,0,9,5.400,0,0,0,0,0,0,0
+341,0,3214,309,0,Disgerminona,4,Diencefalo,Caucaia,0,0,4,5.400,1,0,0,0,0,0,0
+342,1,513,87,1,Tumor neuroectodermico primitivo - PNET,4,Diencefalo,Caucaia,4,10,0,0,2,0,0,0,0,0,0
+343,1,5760,42,1,Ependimoma,2,Gliomatose,Fortaleza,4,0,0,0,2,0,0,0,0,0,0
+344,1,2258,243,1,Unknown,NA,DIPG,Santa Quiteria,1,0,9,5.400,0,0,0,0,0,0,0
+345,0,1137,262,1,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Trairi,0,100,12,5.400,1,0,0,0,0,0,0
+346,0,2658,470,1,Unknown,NA,DIPG,Caninde,3,40,10,5.400,0,0,0,2,0,0,0
+347,0,3612,28,1,Unknown,NA,Diencefalo,Caucaia,0,0,0,0,0,0,0,0,0,0,0
+348,0,6249,839,0,Astrocitoma difuso/fibrilar,2,Frontal,Aquiraz,0,90,0,5.400,2,0,0,0,0,0,0
+349,1,1559,755,1,Unknown,NA,DIPG,Fortaleza,3,40,9,5.400,0,0,0,0,0,0,0
+350,0,6047,847,0,Schwannoma,1,Medula lombar,Granja,0,100,22,0,2,11,0,0,0,0,0
+351,1,311,624,0,Ganglioglioma Infantil Desmoplasico,1,Parietal,Guaiuba,0,100,0,0,2,0,0,0,0,0,0
+352,0,5060,647,0,Ependimoma,2,IV_Vent,Fortaleza,3,40,0,5.400,1,0,0,0,0,0,0
+353,1,913,767,0,Astrocitoma pilomixoide,2,Cerebelo,Limoeiro,4,10,1,0,2,0,0,2,0,0,0
+354,1,453,281,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,3,40,0,0,2,0,0,0,0,0,0
+355,1,33,333,0,Carcinoma de plexo coroide,3,Ventriculo Lat,Ubajara,0,90,0,0,1,0,0,0,0,0,0
+356,0,1282,220,1,Unknown,NA,DIPG,Caninde,2,0,10,5.400,0,0,0,0,0,0,0
+357,0,392,383,1,Ependimoma anaplasico,3,IV_Vent,Caucaia,4,10,14,0,2,0,0,0,0,0,0
+358,0,5534,675,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,0,100,16,5.400,2,0,0,0,0,0,0
+359,1,1336,378,1,Unknown,NA,DIPG,Fortaleza,2,60,10,5.400,0,0,0,0,0,0,0
+360,0,2418,541,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,3,40,0,5.400,2,0,0,0,0,0,0
+361,0,2202,350,1,Unknown,NA,DIPG,Jaguaruana,4,20,10,5.400,0,0,0,0,0,0,0
+362,1,2184,300,2,Ependimoma anaplasico,3,IV_Vent,Acarape,4,10,21,5.400,1,0,0,0,0,0,0
+363,0,3448,282,1,Unknown,NA,DIPG,Caucaia,3,40,10,5.400,0,0,0,0,0,0,0
+364,0,1411,608,0,Astrocitoma difuso/fibrilar,2,Temporal,Caucaia,0,100,9,5.400,2,0,0,0,0,0,0
+365,1,1144,582,0,Unknown,NA,Tronco cerebral - mesencéfalo,Fortaleza,2,60,9,5.400,0,0,0,0,0,0,0
+366,1,2099,504,1,Unknown,NA,DIPG,Fortaleza,3,40,10,5.400,0,0,0,0,0,0,0
+367,1,1703,415,0,Craniofaringioma,1,Diencefalo,Fortaleza,4,10,0,0,2,0,0,0,0,0,0
+368,0,3521,223,1,Glioblastoma,4,Diencefalo,Nova Olinda,4,10,0,5.400,2,0,0,0,0,0,0
+369,0,604,536,0,Unknown,NA,Diencefalo,Limoeiro,0,100,0,0,0,0,0,2,0,0,0
+370,0,2066,269,1,Unknown,NA,DIPG,Fortaleza,1,80,10,5.400,0,0,0,0,0,0,0
+371,1,539,138,1,Meduloblastoma classico,4,Cerebelo,Fortaleza,4,10,0,0,2,0,3600,0,0,0,0
+372,0,682,137,1,Unknown,NA,Ponte atipico,Fortaleza,3,40,13,0,0,0,0,2,0,0,0
+373,0,3711,65,0,Meningioma transicional,1,Gliomatose,Maranguape,0,100,0,0,1,0,0,0,0,0,0
+374,0,5455,525,0,Glioblastoma,4,Diencefalo,Caucaia,3,40,9,5.400,2,0,0,0,0,0,0
+375,0,2028,465,1,Unknown,NA,DIPG,Barreira,1,80,10,5.400,0,0,0,0,0,0,0
+376,1,2150,452,0,Astrocitoma pilomixoide,2,Cerebelo,Pacajus,0,100,0,0,2,0,0,0,0,0,0
+377,0,639,83,1,Unknown,NA,Ponte focal,Fortaleza,1,70,0,0,0,0,0,0,0,0,0
+378,0,1680,490,0,Meduloblastoma classico,4,Cerebelo,Fortaleza,2,60,12,5.400,1,0,0,0,0,0,0
+379,0,1603,257,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Pires Ferreira,2,60,12,5.400,1,0,0,0,0,0,0
+380,1,401,446,0,Unknown,NA,Diencefalo,Caucaia,0,100,1,0,0,0,2000,0,0,0,0
+381,1,728,436,0,Astrocitoma pilomixoide,2,Diencefalo,Caninde,4,10,13,0,2,0,0,0,0,0,0
+382,0,6424,434,0,Unknown,NA,DIPG,Fortaleza,0,100,9,5.400,0,0,0,0,0,0,0
+383,0,4113,135,0,Ependimoma anaplasico,3,Tronco cerebral - mesencéfalo,Ipu,2,60,0,0,2,0,0,0,0,0,0
+384,0,515,258,0,Ependimoma anaplasico,3,Temporal,Sobral,0,90,14,0,1,0,0,0,0,0,0
+385,0,5026,375,0,Tumor de celulas germinativas SOE,4,Gliomatose,Barro,0,100,23,0,2,0,0,0,0,0,0
+386,0,5955,186,0,Xantoastrocitoma pleomorfico,2,Frontal,Horizonte,0,100,0,0,1,0,0,0,0,0,0
+387,1,1283,334,0,Astrocitoma difuso/fibrilar,2,DIPG,Itapipoca,1,90,9,5.400,2,0,0,0,0,0,0
+388,0,4525,184,0,Ganglioglioma Infantil Desmoplasico,1,Temporal,Itaiçaba,0,100,0,0,1,0,0,0,0,0,0
+389,1,4002,296,0,Unknown,NA,DIPG,Horizonte,1,70,0,5.400,0,0,0,0,0,0,0
+390,1,1851,293,0,Unknown,NA,Órbita - nervo óptico,Oros,0,100,1,0,0,0,0,0,0,0,0
+391,0,3371,243,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Cruz,3,50,12,5.400,2,0,0,0,0,0,0
+392,0,2086,71,0,Astrocitoma pilocitico,1,Cerebelo,Fortaleza,1,90,0,0,2,0,0,0,0,0,0
+393,0,2017,183,1,Unknown,NA,DIPG,Caucaia,3,40,0,0,0,0,0,0,0,0,0
+394,0,3834,196,0,Ependimoma,2,IV_Vent,Iracema,2,60,0,5.400,2,0,0,0,0,0,0
+395,0,2086,195,0,Meduloblastoma classico,4,Cerebelo,Itarema,0,100,16,0,1,0,0,0,0,0,0

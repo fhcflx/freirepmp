@@ -1,0 +1,16 @@
+
+# Estatística descritiva de um banco de dados de pacientes pediátricos com tumores do sistema nervoso central
+
+_Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
+
+### Paula Maria Pereira Freire, Universidade Federal do Ceará; Francisco Hélder Cavalcante Félix, Centro Pediátrico do Câncer - Hospital Infantil Albert Sabin; Juvenia Bezerra Fontenele, Curso de Farmácia - Universidade Federal do Ceará
+
+**Abstract:** Um banco de dados de pacientes pediátricos com tumores do sistema nervoso central diagnosticados em um grande hospital estadual foi criado pelos autores. Foram incluídos 395 pacientes com tumores cerebrais primários.
+
+**Keywords:** tumores do sistema nervoso central, cancerologia pediátrica, estística escritiva
+
+November 22, 2017
+
+## Introdução:
+
+
