@@ -1,0 +1,9 @@
+Package: freirepmp
+Version: alpha
+Date: 2017-12-12
+Title: Monografia da Paula Freire
+Description: Resultados, análises e documentos relativos à monografia de Paula Freire.
+Author: Francisco H C Felix <fhcflx@outlook.com>
+Maintainer: Francisco H C Felix <fhcflx@outlook.com>
+License: MIT + file LICENS
+Imports: knitr
