@@ -1,3 +1,3 @@
 require(knitr)
-knit(file='script/monop.Rmd',output='doc')
-pandoc(file='doc/monop.md', pdf)
+knit('script/monop.Rmd',output='doc')
+pandoc('doc/monop.md', pdf)
