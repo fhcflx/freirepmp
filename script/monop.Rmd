@@ -1,5 +1,3 @@
-output: pdf_document
----
 
 # Estatística descritiva de um banco de dados de pacientes pediátricos com tumores do sistema nervoso central
 
