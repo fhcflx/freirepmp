@@ -33,11 +33,17 @@ attach(snc)
 
 ```
 
-```{r Figura1, fig.path='../fig/', fig.height=5, fig.width=5, fig.cap='Pacientes segundo o sexo'}
+```{r Figura1, fig.path='../fig/', fig.height=4, fig.width=4}
 barplot(summary(as.factor(snc$sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
-```{r Figura2, fig.path='../fig/', fig.height=5, fig.width=5, fig.cap='Boxplot da idade ao diagnóstico em anos'}
+
+Figura 1: número de pacientes segundo o sexo.
+
+```{r Figura2, fig.path='../fig/', fig.height=5, fig.width=5}
 boxplot(snc$age/365.25,xlab="Idade (anos)")
 ```
+
+Figura 2: idade dos pacientes ao diagnóstico.
+
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
