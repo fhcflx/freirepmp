@@ -33,7 +33,7 @@ attach(snc)
 
 ```
 
-```{r Figura1, fig.path='fig', fig.height=8, fig.width=8, fig.cap='Pacientes segundo o sexo'}
+```{r Figura1, fig.path='../fig/', fig.height=8, fig.width=8, fig.cap='Pacientes segundo o sexo',echo=FALSE}
 barplot(summary(as.factor(snc$sex)),names.arg=c("masculino","feminino"),xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
 
