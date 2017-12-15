@@ -28,12 +28,12 @@ Na seção a seguir, são mostrados resultados de análises estatísticas concer
 ```{r warning=F, message=F}
 require(pander)  
 require(survival)
-snc<-read.csv('data/snc.csv')
+snc<-read.csv('../data/snc.csv')
 attach(snc)  
 
 ```
 
-```{r Sexo, fig.path='fig', fig.height=10, fig.width=12, fig.cap='Pacientes segundo o sexo'}
+```{r Sexo, fig.path='../fig', fig.height=10, fig.width=12, fig.cap='Pacientes segundo o sexo'}
 plot(snc$sex, names.arg=c("masculino","feminino"),xlab="Sexo")
 ```
 
