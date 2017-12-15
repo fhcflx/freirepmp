@@ -8,6 +8,8 @@ addons:
        - libcurl4-openssl-dev
        - libxml2-dev
 script:
+- chmod a+x script/cibuild
+- script/cibuild
 - Rscript R/build.R
  
 after_success:
