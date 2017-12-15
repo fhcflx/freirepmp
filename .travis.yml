@@ -7,9 +7,12 @@ addons:
      packages:
        - libcurl4-openssl-dev
        - libxml2-dev
-script:
+
+before_script:
 - chmod a+x script/cibuild
 - script/cibuild
+
+script:
 - Rscript R/build.R
  
 after_success:
