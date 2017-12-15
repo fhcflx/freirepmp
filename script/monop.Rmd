@@ -38,6 +38,6 @@ barplot(summary(as.factor(snc$sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
 ```{r Figura2, fig.path='../fig/', fig.height=5, fig.width=5, fig.cap='Boxplot da idade ao diagnóstico em anos'}
-boxplot(summary(snc$age/365.25)),xlab="Idade (anos)")
+boxplot(snc$age/365.25,xlab="Idade (anos)")
 ```
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
