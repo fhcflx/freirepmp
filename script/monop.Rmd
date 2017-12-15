@@ -9,42 +9,154 @@
 
 `r format(Sys.time(), '%B %d, %Y')`
 
-## Introdução:
+## 1. Introdução:
 
-A ciência aberta baseia-se principalmente na capacidade de divulgar (compartilhar) eletronicamente as informações coletadas (dados brutos) e produzidas (análises e seus resultados) de um projeto de pesquisa através da internet. Dessa forma, 2 consequências advém imediatamente:
-1 - Transparência da informação e do processo científicos, inclusive para públicos não técnicos.
-2 - Capacidade irrestrita de comentários, tanto por especialistas (análogo ã _revisão por pares_), quanto por não especialistas (que poderíamos chamar de *revisão cidadã*).
+Embora os tumores do sistema nervoso central (SNC) representem 2% de todas as neoplasias em geral, têm morbi-mortalidade desproporcionalmente grandes, representando a quinta doença neoplásica com maior mortalidade, contando todas as idades. Em adultos, tanto a incidência quanto a mortalidade relacionada a tumores cerebrais têm aumentado (Batchelor, 2005). Os tumores do SNC representam a segunda forma de câncer mais comum em crianças e a principal neoplasia sólida na infância nos EUA, ocorrendo em torno de 21,3% de todas as crianças com doenças malignas (ACS, 2010), com incidência anual de 3,1 casos por 100.000 (Howlader, 2013). Estima-se que, no mundo inteiro, cerca de 8 a 15% das neoplasias pediátricas são representadas por esse grupo, sendo o mais frequente tumor sólido pediátrico (Ries, 1999; Little, 1999). 
+	Nos países em desenvolvimento, constituem o terceiro tipo de câncer mais incidente em crianças (Little, 1999). Já na Europa, entre 1988-1997, a incidência reportada foi de 2,99 por 100000 (Peris-Bonet, 2006).  Esta incidência é mais alta do que a usualmente reportada na Ásia, onde relatos indicam entre 1,8-2,2 casos por 100.000 (Wong, 2005). No Brasil, o primeiro relato do Registro de Câncer de Base Populacional (RCBP) indicou uma incidência, em crianças e adolescentes até 19 anos, de 9,6 a 32,5 casos por 1.000.000, variando significativamente em relação à estatística do mundo desenvolvido ocidental (Camargo, 2010). Em Fortaleza (CE), a incidência ajustada para a idade no período entre 1998 e 2002 foi de 13,4 casos por 1.000.000. Isso representa 11% de todos os diagnósticos de câncer pediátrico, ocupando o terceiro lugar entre os grupos de neoplasias infantis, abaixo apenas de leucemias (30%) e linfomas (15%) (INCA, 2008). A incidência reportada para fortaleza no período de 2001-2005 foi de 16,6 casos por 1.000.000, representando 13,2% dos tumores pediátricos no período, mas ainda em terceiro lugar dentre as neoplasias infantis (INCA, 2010). Um terço desses tumores é diagnosticado antes dos 3 anos de idade. Meninos são mais afetados que meninas, dependendo do tipo neoplásico e da idade do paciente. 
+	A incidência de tumores está aumentando progressivamente, e a sobrevida melhorou pouco em relação às outras neoplasias (Gurney, 1999). Entre 1975 e 2010, a incidência ajustada para a idade em crianças de 0-19 anos nos EUA aumentou de 2,1 para 3,4 casos por 100 mil (Howlader, 2013). Apesar de os tumores representarem a segunda neoplasia mais comum na infância, são as causas mais comuns de mortalidade (30%) por câncer na juventude e a segunda maior causa de mortes de crianças a partir do 1º ano de vida, sendo superada apenas pelos acidentes (Gurney, 1999). Houve um declínio da mortalidade ajustada para a idade relacionada aos tumores de SNC de 1975 a 2010 nos EUA, de 0,9 para 0,6 óbitos por 100 mil. Ao mesmo tempo, a mortalidade para todos os casos de câncer pediátrico caiu mais da metade (Howlader, 2013). Autores brasileiros não encontraram redução de mortalidade em crianças diagnosticadas com tumores cerebrais no período de 1980 a 1998. Em Fortaleza, relatou-se uma discreta redução de 1,3 para 1,1 óbitos por 100.000 habitantes quanto à taxa de óbitos por tumores cerebrais em menores de 15 anos entre os períodos de 1980 a 1982 e de 1995 a 1997 (Monteiro, 2003).
 
-O observador arguto já pode levantar a questão de que o controle de comentários numa plataforma é dos controladores daquele serviço, ou seja, é possível criar um canal de comunicação tipo "ciência aberta", porém unidirecional, sem recepção de comentários (ou pior, é possível censurá-los). Independentemente disso, os _comentários a uma publicação livremente disponível na internet_ podem ser publicados em *qualquer canal* sem relação com o canal original e referenciado ao primeiro. Ou seja, não há como verdadeiramente censurar comentários a uma publicação livre na internet.
+## 2. Referencial teórico:
 
-Outra característica importante da ciência aberta é a capacidade de *reuso* de informações, o que pode ser entendido como a principal utilidade social da ciência aberta. Esta característica simples tem o potencial de otimizar a produção científica a nível global. Bastaria isso para justificar a implementação em larga escala da ciência aberta. Outros benefícios podem ser descritos de forma ilimitada.
+A necessidade de se organizar as informações sistematizadas sobre a incidência de câncer motivou o aparecimento de registros de câncer de base populacional (RCBP). Os primeiros registros de câncer no mundo foram estruturados em Hamburgo na Alemanha em 1926; Massachusetts nos Estados Unidos em 1927; Saskatchewan no Canadá em 1932; Connecticut nos Estados Unidos em 1935; e na Dinamarca em 1942. No Brasil, em 1921 foi criado o Departamento Nacional de Câncer, com o objetivo de estabelecer estatísticas sobre a doença. Recomendava-se que os atestados de óbito fossem fornecidos em impressos apropriados, com quesitos sobre câncer e incentivou-se a notificação dos casos de câncer, e não apenas dos óbitos. O Decreto-Lei no 15.971 de 4/7/1944, criou o Serviço Nacional de Câncer, que tinha como uma de suas atribuições cooperar com o Serviço Federal de Bioestatística no levantamento, em todo o território nacional, da morbidade e mortalidade por câncer. Em 1968, foi criada a Campanha Nacional de Combate ao Câncer - CNCC, que tinha como um dos objetivos incentivar a implantação de registros de câncer de base populacional nas diversas regiões do país. Naquela época, existia apenas o registro de Recife (1967), com início de suas atividades no ano anterior. Foram criados então os registros de São Paulo (1969), Fortaleza (1971) e Porto Alegre (1973) (Ministério da Saúde, 2003). 
+	O registro do câncer é muitas vezes restrito ao grupo de neoplasias malignas, ao passo que a informação sobre os tumores benignos e de comportamento incerto não está geralmente disponível. Os tumores cerebrais, no entanto, diferem daqueles de outros sítios pelo largo espectro de diferentes tipos de tumores, e pela localização na proximidade de áreas eloquentes com considerável comorbidade neurológica e mortalidade, independentemente do seu comportamento biológico. A fim de obter uma visão global do impacto dos tumores cerebrais, registros especializados, que fornecem informações sobre todos os tipos de tumor cerebral, têm surgido em vários países (Woehrer, 2013). Seguindo-se às pioneiras experiências japonesa e norte-americana de registros especializados em tumores cerebrais, o Brain Tumor Registry of Japan (Nomura, 2000) e o Central Brain Tumor Registry of the United States (CBTRUS), outros registros especializados foram abertos em países europeus, como o Reino Unido (NBTR - National Brain Tumor Registry), a Áustria, a Suécia, a Dinamarca e a Holanda. Em todas essas experiências, ocorre a cooperação de entidades educacionais, sociedades de especialidade e dos registros nacionais (Woehrer, 2013). A Brain Tumor Foundation do Canadá iniciou recentemente um projeto para criar um registro nacional de tumores cerebrais nos moldes do CBTRUS. 
+	Em outros países, experiências de registros de tumores cerebrais em centros isolados têm sido descritas, como na Grécia (Stranjalis, 2013), Jamaica (Campbell, 2012), e outros. Os Registros Hospitalares de Câncer – RHC são fontes sistemáticas de informações, instalados em hospitais gerais ou especializados em oncologia, com o objetivo de coletar dados referentes ao diagnóstico, tratamento e evolução dos casos de neoplasia maligna atendidos nessas instituições, sejam públicas, privadas, filantrópicas ou universitárias. A implantação de registros de câncer em cada hospital objetiva disponibilizar informações, melhoria de processos administrativos e da documentação referentes à assistência ao paciente e também assegurar o retorno dos pacientes para o seguimento. O propósito de um RHC é o de atender às necessidades da administração do hospital, do programa de controle do câncer nele desenvolvido e, sobretudo, do paciente em particular. Como parte da padronização de informações, todos os registros utilizam classificações e codificações de uso nacional e padrões internacionais para identificar características pessoais dos pacientes com câncer, informações clínicas e da doença (INCA, 2010). As normas de registro dos RHC incluem todos os tumores malignos, deixando o registro de tumores benignos ou de comportamento incerto à discrição de cada serviço hospitalar. Assim, apesar de serem fontes inestimáveis de informação sobre os pacientes com câncer, os RHC também não abarcam todo o espectro dos tumores cerebrais. Embora as experiências de registros hospitalares de tumores cerebrais mostrem que estes têm limitações, eles são muitas vezes as únicas fontes de informação sobre tumores cerebrais em locais sem registro nacional e em relação a períodos anteriores à sua estruturação (Bunin, 1998).
+A informação armazenada num registro de câncer pode ser utilizada para avaliar a qualidade da atenção à saúde no âmbito dos serviços de saúde (RHC) ou num âmbito populacional (RCBP). Para tanto, é necessário que os dados armazenados tenham uma qualidade mínima a fim de permitir sua utilização para mensurar a adequação a padrões de prática clínica. Embora não existam critérios bem definidos de qualidade para a utilização de registros de câncer na avaliação da atenção à saúde, sabe-se que a maioria dos RCBP têm falhas e lacunas em seu banco de dados que dificultam enormemente seu uso para tanto (Malin, 2002; Beatty, 2010). Assim, pelo menos neste momento, parece mais factível utilizar os dados oriundos de um RHC bem estruturado a fim de monitorar a qualidade da atenção à saúde.
 
-Esta é a implementação de ciência aberta que criei, baseando-me largamente em projetos já existentes. Trata-se de um caderno de pesquisa aberto, armazenado num repositório remoto para o programa Git (existem vários), gerado através de um serviço de integração contínua (CI) em nuvem (vários idem) e com a estrutura de um pacote da linguagem estatística R, usada para as análises. *Não se trata de um pacote verdadeiro*, apesar de ter um diretório de código R e um arquivo de definições DESCRIPTION. O objetivo desse mimetismo é facilitar as análises numa plataforma de CI. Um pacote de R é um programa com funções utilizáveis. Não é isso que este(s) caderno(s) é(são). Assim, propositadamente deixe de fora partes imprescindíveis de um pacote, como o NAMESPACE e os manuais.
+## 3. Objetivos:
 
-Na seção a seguir, são mostrados resultados de análises estatísticas concernentes a este caderno aberto de pesquisa em particular. Todos os dados pertinentes a seres humanos são adequadamente desidentificados.
+### 3.1.Geral:
 
-## Análises:
+Construir um registro do perfil epidemiológico dos pacientes submetidos a tratamento para tumores do SNC no CPC do HIAS, no período de janeiro de 2000 a dezembro de 2014, ao diagnóstico e durante o seguimento, atualizando as informações em períodos determinados. Incluir estes dados numa base eletrônica capaz de armazenar, recuperar e apresentar as informações de interesse. Dessa forma, criando um registro hospitalar de pacientes pediátricos com tumores do SNC.
 
-```{r code1, warning=F, message=F}
-require(pander)  
-require(survival)
-snc<-read.csv('../data/snc.csv')
-attach(snc)  
+### 3.2. Específicos:
 
-```
+Descrever por meio de estatística descritiva as informações coletadas e deixá-las disponíveis a fim de gerar subsídios para a gestão hospitalar para otimizar e tomar decisões que reflitam no tratamento mais adequado de pacientes pediátricos com tumores cerebrais.
 
-```{r Figura1, fig.path='../fig/', fig.height=4, fig.width=4}
-barplot(summary(as.factor(snc$sex)),names.arg=c("masculino","feminino"),
-xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
-```
+## 4. Materiais e métodos:
 
-Figura 1: número de pacientes segundo o sexo.
+### 4.1. Delineamento e local da pesquisa: 
+	Foi realizado um estudo observacional, descritivo, longitudinal, com objetivo de gerar problematizações e hipóteses, para registrar as informações sobre pacientes pediátricos portadores de tumores cerebrais tratados no nosso serviço.
+	A pesquisa foi desenvolvida no Hospital Infantil Albert Sabin e em seu anexo Centro Pediátrico do Câncer, especialmente no setor de atendimento ambulatorial do CPC, na enfermaria do CPC e na UTIP do CPC. Pacientes em outros setores do hospital podem ser recrutados, mas preferencialmente serão transferidos para as unidades citadas. Foi utilizada amostragem por acessibilidade, onde, conforme Gil (2008), "[...] o pesquisador seleciona os elementos a que tem acesso, admitindo que estes possam de alguma forma, representar o universo". A amostra foi constituída por pacientes diagnosticados por demanda espontânea.
+O Hospital Infantil Albert Sabin (HIAS) é uma instituição hospitalar da administração direta da saúde da Secretaria de Saúde do Estado do Ceará, habilitado como unidade de assistência de alta complexidade em neurologia/neurocirurgia, UNACON exclusiva de oncologia pediátrica, UTI pediátrica nível II e hospital de ensino, nível de atenção de alta complexidade, atendendo pelo SUS (fonte: CNES 2013 cnes.datasus.gov.br). O Centro Pediátrico do Câncer é o anexo do HIAS onde o tratamento oncológico clínico é realizado, contando ainda com equipe multiprofissional de atenção às crianças com câncer. Tem 22 leitos de internação em enfermaria (2 isolamentos), 06 leitos de UTIP, e 5 consultórios para atendimento ambulatorial. O ambulatório e a enfermaria contam com material para atendimento às urgências e emergências, incluindo carrinho de emergência completo com drogas e equipamento para reanimação. O CPC conta com plantão médico 24h por dia. O atendimento aos pacientes se dará preferencialmente no CPC (ambulatório, enfermaria, UTIP), exceto se o paciente estiver internado em outra unidade do HIAS e não puder ser transferido de leito.
+	Foram analisados prontuários de saúde dos pacientes entre 0 e 18 anos, portadores de tumores cerebrais, que iniciaram tratamento quimioterápico no Serviço de Onco-Hematologia Pediátrica do Hospital Infantil Albert Sabin entre janeiro de 2002 e dezembro de 2014. 
+	Os participantes cujas informações foram extraídas após o óbito ou fim do tratamento não precisaram ser informados sobre a pesquisa (solicitado à Comissão de Ética em Pesquisa de acordo com o previsto na Resolução CNS nº 466/12). Os participantes incluídos enquanto ainda estavam em tratamento foram informados sobre o protocolo de estudo e esclarecidos sobre o objetivo do trabalho, sendo solicitado o preenchimento de consentimento informado para prosseguir com a coleta de dados.  Foi respeitada a autonomia do participante da pesquisa, garantia do seu anonimato, assegurando sua privacidade quanto a dados confidenciais, como rege Resolução CNS nº 466/12 e a Norma Operacional 001/2013 do Conselho Nacional de Saúde. Para sua realização, o estudo será submetido à apreciação e aprovação do Comitê de Ética e Pesquisa (CEP) do HIAS. 
+	O pesquisador responsável pela extração dos dados foi devidamente treinado e capacitado para realização dos procedimentos. Após este treinamento, foi iniciado o recrutamento da amostra, com identificação dos pacientes admitidos.
 
-```{r Figura2, fig.path='../fig/', fig.height=4, fig.width=4}
-boxplot(snc$age/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
-frame.plot=F)
-```
+### 4.2 Critérios de inclusão e exclusão: 
+#### 4.2.1. Critérios de inclusão: 
+	A. Pacientes entre 0 e 18 anos que receberam diagnóstico de tumor cerebral primário comprovado por imagem e/ou histologia, tratados no Centro Pediátrico do Câncer (pacientes que receberam diagnóstico em outro lugar e foram transferidos posteriormente também foram incluídos).
+	B. Diagnóstico descrito na Classificação Internacional de Câncer na Infância, terceira edição (CICI-3), grupo III (SNC e miscelânia de neoplasias intracranianas e intra-espinhais) (Steliarova-Foucher, 2005).
+4.2.2 Critérios de exclusão. 
+	A. Vontade expressa do paciente ou seus familiares. Foi assinado termo de consentimento informado para extrair as informações do prontuário de saúde dos pacientes, exceto nos casos previstos na metodologia.
+	B. Diagnóstico de doença não neoplásica: inflamatória, infecciosa ou de outra etiologia. Pacientes com patologia de etiologia duvidosa não serão incluídos.
 
-Figura 2: idade dos pacientes ao diagnóstico.
+### 4.3. Análise dos resultados: 
+	Foram avaliados nesse estudo, através de dados coletados dos prontuários dos pacientes, o tipo e subtipo histológico, grau de malignidade, topografia e disseminação local e distante, e o tamanho das lesões; o quadro clínico de entrada dos pacientes; o tratamento instituído, incluindo cirurgia, radioterapia, quimioterapia e quaisquer outros; o desfecho do tratamento (óbito, remissão completa ou parcial, estabilização da doença, progressão da doença); a indicação de mudança de tratamento.
+	O instrumento foi um questionário interativo construído com o aplicativo Google Formulários (Google Inc., 2014). Este aplicativo permite a criação, gerenciamento, aplicação, validação e recuperação de dados com formulários digitais com várias opções disponíveis. Os formulários puderam ser preenchidos em vários dispositivos diferentes (computadores PC, Mac e Linux, tablets e smartphones Apple e Android), permitindo grande mobilidade e flexibilidade aos pesquisadores. 
+	O instrumento foi construído tendo por base instrumentos já validados e modelos padronizados. Os instrumentos e avaliações utilizados compreendem:  
+	Avaliação sócio-demográfica: questões relacionadas às características sócio-demográficas, como idade ao diagnóstico, município de procedência, dentre outras, obtidas a partir do prontuário de saúde do paciente, baseada no protocolo da Organização Mundial de Saúde (OMS). 
+Informações do diagnóstico: topografia e tipo histológico do tumor de acordo com a Classificação Internacional de Doenças (CID-10) e com a CICI-3 (OMS, 2007; Steliarova-Foucher, 2005). 
+	Capacidade de desempenho: escala modificada de Lansky (LPPS), para pacientes até 16 anos, ou de Karnofsky (Lansky, 1987; Karnofsky, 1948), para pacientes maiores de 16 anos. Escala de desempenho do Eastern Cooperative Oncology Group (ECOG), também chamada de escala da OMS ou de Zubrod (Oken, 1982). A capacidade de desempenho dos pacientes foi inicialmente avaliada pelo oncologista assistente na primeira consulta após referência pela neuro-cirurgia (depois do procedimento cirúrgico).
 
-_Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
+#### 4.3.1. Análise estatística dos resultados: 	
+	O desenho do estudo é unicêntrico, aberto, não randomizado, não controlado e retrospectivo. O principal objetivo do estudo é a descrição de um grupo de pacientes tratados em nosso serviço hospitalar. Um desenho experimental descritivo longitudinal foi utilizado, devido à necessidade de atualização periódica dos dados após o registro inicial de cada paciente.
+	Variáveis quantitativas foram resumidas através de média e desvio padrão da média, além de mediana e quartis inferior e superior para a idade. Variáveis qualitativas foram resumidas através de frequências. As tabulações e análises foram realizadas eletronicamente através dos programas Excel 2011 para Mac OS X (Microsoft, 2000-2011) e R 3.X (R Development Core Team, 2017). 
+
+#### 4.3.2. Tamanho da amostra: 
+O projeto não objetiva amostrar uma população, mas sim registrar exaustivamente todos os casos que preencham os critérios de inclusão. Assim, não foi calculado tamanho amostral para o presente projeto.
+
+## 5. RESULTADOS
+
+	Foram incluídos 395 pacientes, sendo 216 do sexo masculino e 179 do sexo masculino (relação M:F igual a 1,21). A idade média ao diagnóstico foi de 7,8 anos (desvio padrão, DP = 4,37) e a mediana da idade ao diagnóstico foi de 7,3 anos (variação de 28 dias de vida a 17,9 anos). Em relação ao município declarado de residência ao diagnóstico, 131 (33%) pacientes declararam residência em Fortaleza ao diagnóstico, 21 (5%) pacientes em Caucaia, 11 (2,8%) pacientes em Itapipoca, 7 (1,8%) pacientes em Canindé e Maracanaú, 6 (1,5%) pacientes em Itapajé, Pacatuba, Quixadá e Sobral, e 5 ou menos pacientes em outros 115 municípios do estado do Ceará e mais 3 municípios de outros estados.  
+O tempo médio de seguimento (do diagnóstico até a data da última informação) foi de 3 anos (DP = 3,1) e a mediana do tempo de seguimento foi de 1,7 anos (variação de 6 dias a 15,4 anos). Até o final do seguimento, 183 (46,3%) pacientes estavam vivos e 206 (52,2%) haviam ido a óbito, sendo que 6 (1,5%) dos pacientes haviam sido perdidos de seguimento. 
+Quanto ao diagnóstico histológico, os pacientes com astrocitoma pilocítico, astrocitoma pilomixóide, astrocitoma difuso ou fibrilar e astrocitoma sem outra especificação (SOE) foram agrupados na entidade “astrocitomas de baixo grau”, uma vez que todos são classificados como grau I ou II da OMS e têm comportamento semelhante (cit). Igualmente, pineoblastoma, tumor teratóide-rabdóide atípico, tumores neuroectodérmicos primitivos e meduloepitelioma foram agrupados como “outros tumores embrionários”. Glioblastoma e astrocitoma anaplásico, os dois gliomas malignos mais comuns, foram reportados em conjunto. Já a expressão “outros gliomas” foi usada para agregar os demais tumores gliais, incluindo oligodendroglioma, ganglioglioma (e suas variantes), xantoastrocitoma, astrocitoma subependimário de células gigantes, e glioma SOE. Lesões benignas, incluindo craniofaringioma, meningioma, cavernoma, papiloma de plexo coróide, schwannoma e adenoma de hipófise, também foram agrupados sob o rótulo “outras lesões benignas”. Tumores malignos mais raros também foram citados em conjunto como “outros tumores malignos”. A tabela 1 mostra os resultados de histologia dos tumores do sistema nervoso central.
+Do total de pacientes, 80 (20,2%) dos pacientes foram reportados com meduloblastoma, 67 (17%) com astrocitomas de baixo grau, 41 (10,4%) com ependimoma (incluindo todos os subtipos), 32 (8,1%) com outras lesões benignas do sistema nervoso central,  22 (5,6%) com glioblastoma ou astrocitoma anaplásico, 16 (4,1%) com outros gliomas, 14 (3,5%) com tumores de células germinativas, 10 (2,5%) com outros tumores embrionários e 8 (2%) com outros tumores malignos. Cento e cinco pacientes (26,6%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 1).
+Ainda em relação à histologia das lesões, quanto à classificação da OMS, 62 pacientes (15,7%) tinham lesões grau I, 75 (19%) grau II, 29 (7,3%) grau III e 124 (31,4%) grau IV. Cento e cinco pacientes (26,6%), todavia, não foram biopsiados e, portanto, não tinham classificação histológica da OMS (figura 1). 
+Quanto à topografia das lesões, 145 (36,7%) dos pacientes foram reportados com tumores no cerebelo, 92 (23,3%) com tumores do tronco cerebral, 77 (19,5%) com tumores supratentoriais hemisféricos, 66 (16,7%) com tumores supratentoriais de linha média, 11 (2,8%) com tumores espinhais e 4 (1%) em outras localizações (nervo óptico, ângulo ponto-cerebelar). 
+Quanto à capacidade de desempenho na primeira consulta oncológica, 191 (47,2%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto 68 (16,8%) tiveram nota 1, 35 (8,6%) tiveram nota 2, 46 (11,4%) tiveram nota 3 e 40 (9,9%) tiveram nota 4. Vinte e cinco pacientes (6,2%) não tiveram nota da escala ECOG atribuída. Ainda em relação à capacidade de desempenho na primeira consulta oncológica, 150 (37%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, 40 (9,9%) com nota entre 60 e 79, 47 (11,6%) com nota entre 40 e 59, 22 (5,4%) com nota entre 20 e 39 e 120 pacientes (29,6%) foram avaliados com nota abaixo de 20. Vinte e seis pacientes (6,4%) não foram avaliados segundo a escala de Lansky.
+Em relação ao tratamento instituído, 299 pacientes (74%) sofreram cirurgia pelo menos uma vez, 281 (69%) receberam algum tipo de quimioterapia antineoplásica (QT) e 210 (52%) foram tratados com radioterapia (RT). Setenta e quatro pacientes (18,3%) foram tratados apenas com cirurgia, 28 (7%) foram tratados apenas com QT e 4 (1%) foram tratados apenas com RT. Dentre os 281 pacientes tratados farmacologicamente, 8 pacientes (2%) receberam terapia-alvo (fármacos anti-neoplásicos sem efeito citotóxico em células saudáveis). As drogas usadas como terapia-alvo foram propranolol, tamoxifeno, everolimo e nimotuzumabe. Setenta e oito pacientes (19,3%) receberam um segundo esquema de QT após recidiva ou progressão da doença, enquanto 19 (4,7%) receberam o terceiro esquema, 4 (1%) receberam o quarto esquema e 1 paciente apenas chegou a receber o quinto esquema de QT. 
+Setenta e um pacientes (17,5%) sofreram um segundo procedimento cirúrgico para retirada de tumor após recidiva ou progressão. Por fim, 15 pacientes (3,7%) foram tratados uma segunda vez com RT, após recidiva ou progressão tumoral (figura 2).
+
+## 6. DISCUSSÃO
+
+
+## 7. CONCLUSÕES
+
+## 8. REFERÊNCIAS
+
+BATCHELOR TT, DORFMAN MV, HUNTER DJ. Epidemiology of Primary Brain Tumors. In Cancer of the Central Nervous System. Black PM, Loeffler JS, eds. Lippincott Williams & Wilkins, Philadelfia,  USA, 2005.
+
+AMERICAN CANCER SOCIETY. Cancer Facts & Figures 2010. Atlanta: American Cancer Society, 2010.
+
+HOWLADER N, NOONE AM, KRAPCHO M, GARSHELL J, NEYMAN N, ALTEKRUSE SF, KOSARY CL, YU M, RUHL J, TATALOVICH Z, CHO H, MARIOTTO A, LEWIS DR, CHEN HS, FEUER EJ, CRONIN KA (eds). SEER Cancer Statistics Review, 1975-2010, National Cancer Institute. Bethesda, MD, http://seer.cancer.gov/csr/1975_2010/, based on November 2012 SEER data submission, posted to the SEER web site, April 2013.
+
+RIES LAG, SMITH MA, GURNEY JG, LINET M, TAMRA T, YOUNG JL, BUNIN GR, editors. Cancer Incidence and Survival Among Children and Adolescents: United States SEER Program 1975-1995. Bethesda: National Cancer Institute, SEER Program; 1999.
+
+LITTLE J. Introduction. In: Little J. Epidemiology of childhood cancer. Lyon: International Agency for Research on Cancer: World Health Organization; 1999.
+
+PERIS-BONET R, MARTÍNEZ-GARCÍA C, LACOUR B, PETROVICH S, GINER- RIPOLL B, NAVAJAS A, STELIAROVA-FOUCHER E (2006) Childhood central nervous system tumors-incidence and survival in Europe (1978-1997): report from Automated Childhood Cancer Information System project. Eur J Cancer 42:2064-2080. doi: 10.1016/j.ejca.2006.05.009
+
+WONG TT, HO DM, CHANG KP, et al. Primary pediatric brain tumors: statistics of Taipei VGH, Taiwan (1975-2004). Cancer. 2005;104:2156-2167.
+
+CAMARGO B, SANTOS MO, REBELO MS, et al. Cancer incidence among children and adolescents in Brazil: first report of 14 population-based cancer registries. Int J Cancer. 2010;126: 715-720. 
+INSTITUTO NACIONAL DE CÂNCER (BRASIL). Câncer no Brasil: dados dos registros de base populacional, vol.4. Rio de Janeiro: INCA; 2010.
+
+INSTITUTO NACIONAL DE CÂNCER (BRASIL). Coordenação de Prevenção e Vigilância. Câncer da criança e adolescente no Brasil: dados dos registros de base populacional e de mortalidade. Rio de Janeiro: INCA; 2008.
+
+GURNEY JG, SMITH MA, BUNIN GR. CNS and miscellaneous intracranial and intraspinal neoplasms. In: Ries LAG, Smith MA, Gurney JG, Linet M, Tamra T, Young JL, Bunin GR, editors. Cancer Incidence and Survival among Children and Adolescents: United States SEER Program 1975-1995. Bethesda: National Cancer Institute, SEER Program; 1999.
+
+MONTEIRO GTR, KOIFMAN S. Mortalidade por tumores de cérebro no Brasil, 1980-1998. Cad Saúde Pública. 2003;19:1139-1151.
+
+CBTRUS (2012). CBTRUS Statistical Report: Primary Brain and Central Nervous System Tumors Diagnosed in the United States in 2004-2008 (March 23, 2012 Revision). Source: Central Brain Tumor Registry of the United States, Hinsdale, IL. website: www.cbtrus.org
+
+GAN, G. & HAAS-KOGAN, D. LOW-GRADE GLIOMAS, IN GUPTA, N., BANERJEE, A., HAAS-KOGAN, D [Editors]. Pediatric CNS Tumors, Pediatric Oncology [Series], 2010, Springer Berlin Heidelberg, pages 1-35
+
+PARTAP, S. & FISHER, PG. Embryonal Tumors, in Gupta, N., Banerjee, A., Haas-Kogan, D [Editors]. Pediatric CNS Tumors, Pediatric Oncology [Series], 2010, Springer Berlin Heidelberg, pages 89-114
+
+MERCHANT TE, POLLACK IF, LOEFFLER JS. Brain tumors across the age spectrum: biology, therapy, and late effects. Semin Radiat Oncol. 2010;20(1):58-66.
+
+DE ARAUJO OL, DA TRINDADE KM, TROMPIERI NM, FONTENELE JB, FELIX FH. Analysis of survival and prognostic factors of pediatric patients with brain tumor. J Pediatr (Rio J). 2011;87(5):425-32
+MINISTÉRIO DA SAÚDE DO BRASIL. Secretaria de Vigilância em Saúde. Sistemas de informação em saúde e vigilância epidemiológica. In Guia de vigilância epidemiológica, 6a ed., Brasília: Ministério da Saúde, 2005.
+
+MINISTÉRIO DA SAÚDE DO BRASIL. Secretaria de Assistência à Saúde. Instituto Nacional de Câncer. Câncer no Brasil: dados dos registros de base populacional, volume 3. - Rio de Janeiro: INCA, 2003
+
+WOEHRER A. Brain tumor epidemiology in Austria and the Austrian Brain Tumor Registry. Clin Neuropathol. 2013;32(4):269-85
+
+NOMURA K. Present status of brain tumor statistics in Japan. Int J Clin Oncol 2000; 5:355-360
+
+STRANJALIS G, KALAMATIANOS T, STAVRINOU LC, MATHIOS D, KOUTSARNAKIS C, TZAVARA C, LOUFARDAKI M, PROTOPAPPA D, ARGYRAKOS T, RONTOGIANNI DP, SAKAS DE. The Evangelismos hospital central nervous system tumor registry: Analysis of 1414 cases (1998-2009). Surg Neurol Int 2013;4:23
+
+CAMPBELL J, JAGGON JR, JOHNSON P, BRUCE C, ELDEMIRE-SHEARER D. The establishment of an intracranial tumour registry at the University Hospital of the West Indies. West Indian Med J. 2012 Jun;61(3):254-7.
+
+INSTITUTO NACIONAL DE CÂNCER. Registros hospitalares de câncer: planejamento e gestão / Instituto Nacional de Câncer. 2 ed. - Rio de Janeiro: INCA, 2010.
+
+BUNIN GR, SURAWICZ TS, WITMAN PA, PRESTON-MARTIN S, DAVIS F, BRUNER JM. The descriptive epidemiology of craniopharyngioma. J Neurosurg. 1998;89(4):547-51. 
+
+MALIN JL, KAHN KL, ADAMS J, KWAN L, LAOURI M, GANZ PA. Validity of cancer registry data for measuring the quality of breast cancer care. J Natl Cancer Inst. 2002;94(11):835-44.
+BEATTY JD, ADACHI M, BONHAM C, ATWOOD M, POTTS MS, HAFTERSON JL, AYE RW. Utilization of cancer registry data for monitoring quality of care. Am J Surg. 2011;201(5):645-9.
+
+GIL, AC. Métodos e técnicas de pesquisa social. 6ª Edição, Editora Atlas, 2008. p. 104.
+
+GOOGLE, INC. Políticas e princípios. Acessado em 09/03/2014 no sítio: http://www.google.com/intl/pt-BR/policies/
+
+ORGANIZAÇÃO MUNDIAL DA SAÚDE. CID 10/ Organização Mundial da Saúde; tradução Centro Colaborador da OMS para a Classificação de Doenças em Português. 10 ed. rev. - São Paulo: Editora da Universidade de São Paulo, 2007.
+
+LANSKY SB, LIST MA, LANSKY LL, RITTER-STERR C, MILLER DR. The measurement of performance in childhood cancer patients. Cancer. 1987;60(7):1651-6
+
+NASSAR JUNIOR AP, PIRES NETO RC, DE FIGUEIREDO WB, PARK M. Validity, reliability and applicability of Portuguese versions of sedation-agitation scales among critically ill patients. Sao Paulo Med J. 2008;126(4):215-9.
+
+WOLFF JE, MOHIUDDIN K, JORCH N, GRAF N, WAGNER S, VATS T, GNEKOW A. Measuring performance status in pediatric patients with brain tumors--experience of the HIT-GBM-C protocol. Pediatr Blood Cancer. 2010;55(3):520-4.
+
+SAAD ED, HOFF PM, CARNELÓS RP, KATZ A, NOVIS YAS, PIETROCOLA M, et al. Critérios comuns de toxicidade do Instituto Nacional de Câncer dos Estados Unidos. Rev Bras Cancerol. 2002;48(10):63-96.
+
+OKEN, M.M., CREECH, R.H., TORMEY, D.C., HORTON, J., DAVIS, T.E., MCFADDEN, E.T., CARBONE, P.P.: Toxicity And Response Criteria Of The Eastern Cooperative Oncology Group. Am J Clin Oncol 5:649-655, 1982.
+
+OCEBM LEVELS OF EVIDENCE WORKING GROUP*. "The Oxford 2011 Levels of Evidence". Oxford Centre for Evidence-Based Medicine. http://www.cebm.net/index.aspx?o=5653
+
+VAN DEN BENT MJ, WEFEL JS, SCHIFF D, TAPHOORN MJ, JAECKLE K, JUNCK L, ARMSTRONG T, CHOUCAIR A, WALDMAN AD, GORLIA T, CHAMBERLAIN M, BAUMERT BG, VOGELBAUM MA, MACDONALD DR, REARDON DA, WEN PY, CHANG SM, JACOBS AH. Response assessment in neuro-oncology (a report of the RANO group): assessment of outcome in trials of diffuse low-grade gliomas. Lancet Oncol. 2011;12(6):583-93.
+
+Karnofsky DA, Abelmann WH, Craver LF, Burchenal JH. The Use of the Nitrogen Mustards in the Palliative Treatment of Carcinoma – with Particular Reference to Bronchogenic Carcinoma. Cancer. 1948;1(4):634-56.
+
+ Oken MM, Creech RH, Tormey DC, et al. (1982). "Toxicity and response criteria of the Eastern Cooperative Oncology Group". Am. J. Clin. Oncol. 5 (6): 649–55. doi:10.1097/00000421-198212000-00014.
+
+
