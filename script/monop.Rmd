@@ -34,7 +34,7 @@ attach(snc)
 ```
 
 ```{r Sexo, fig.path='../fig', fig.height=10, fig.width=12, fig.cap='Pacientes segundo o sexo'}
-barplot(snc$sex, names.arg=c("masculino","feminino"),xlab="Sexo")
+barplot(summary(snc$sex), names.arg=c("masculino","feminino"),xlab="Sexo")
 ```
 
 
