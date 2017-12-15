@@ -40,8 +40,9 @@ xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 
 Figura 1: número de pacientes segundo o sexo.
 
-```{r Figura2, fig.path='../fig/', fig.height=5, fig.width=5}
-boxplot(snc$age/365.25,xlab="Idade (anos)")
+```{r Figura2, fig.path='../fig/', fig.height=4, fig.width=4}
+boxplot(snc$age/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
+frame.plot=F)
 ```
 
 Figura 2: idade dos pacientes ao diagnóstico.
