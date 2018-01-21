@@ -49,4 +49,6 @@ frame.plot=F)
 
 Figura 2: idade dos pacientes ao diagnóstico.
 
+`r summary(snc)`
+
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
