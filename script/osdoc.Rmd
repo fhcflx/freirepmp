@@ -35,7 +35,7 @@ attach(snc)
 
 ```
 
-```{r Figura1, fig.path='../fig/', fig.height=6, fig.width=5}
+```{r Figura1, fig.path='../fig/', fig.height=6.5, fig.width=5}
 barplot(summary(as.factor(snc$sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
@@ -48,5 +48,12 @@ frame.plot=F)
 ```
 
 Figura 2: idade dos pacientes ao diagnóstico.
+
+```{r table1, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
+require(DescTools)
+panderOptions('table.split.table', Inf)
+set.caption("Procedência dos pacientes")
+pander(origin, style = 'rmarkdown')
+```
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
