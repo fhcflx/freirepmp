@@ -49,11 +49,13 @@ frame.plot=F)
 
 Figura 2: idade dos pacientes ao diagnóstico.
 
+</br></br>
+
 ```{r table1, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
 require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Procedência dos pacientes")
-pander(Freq(summary(origin,maxsum=120)), style = 'rmarkdown')
+pander(Freq(origin), style = 'rmarkdown')
 ```
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
