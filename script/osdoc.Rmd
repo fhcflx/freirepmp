@@ -55,7 +55,7 @@ panderOptions('table.split.table', Inf)
 set.caption("Procedência dos pacientes")
 pander(Freq(origin,ord='desc'), style = 'rmarkdown')
 ```
-```{r Figura3, fig.path='../fig/', fig.height=6, fig.width=5}
+```{r Figura3, fig.path='../fig/', fig.height=5, fig.width=4}
 boxplot(follow/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
 frame.plot=F)
 ```
@@ -66,7 +66,7 @@ Figura 3: tempo de seguimento.
 require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Histologia dos tumores")
-pander(Freq(histo,ord='desc'), style = 'rmarkdown')
+pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 ```
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
