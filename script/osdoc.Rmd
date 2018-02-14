@@ -56,7 +56,7 @@ set.caption("Procedência dos pacientes")
 pander(Freq(origin,ord='desc'), style = 'rmarkdown')
 ```
 ```{r Figura3, fig.path='../fig/', fig.height=4.5, fig.width=3.5}
-boxplot(follow/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
+boxplot(follow/365.25,xlab="Tempo (anos)",boxwex=0.6,staplewex=0.4,
 frame.plot=F)
 ```
 
@@ -71,9 +71,13 @@ pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 
 ```{r Figura4, fig.path='../fig/', fig.height=3, fig.width=5}
 require(reshape)
-snc$histo.group=combine_factor(histo,c(1,2,3,2,2,2,2,4,5,5,1,5,6,7,4,8,8,8,8,5,3,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,5,10,11,12,8))
-levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau","Glioma de alto grau","Outros tumores malignos","Tumores de células germinativas","Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários","Tumor teratóide-rabdóide","Sem histologia")
-barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),col="white")
+snc$histo.group=combine_factor(histo,c(1,2,3,2,2,2,2,4,5,5,1,5,6,7,4,8,8,8,8,5,
+3,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,5,10,11,12,8))
+levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau","Glioma de alto grau",
+"Outros tumores malignos","Tumores de células germinativas","Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários","Tumor teratóide-rabdóide","Sem histologia")
+par(las=2)
+par(mar=c(5,11,4,2))
+barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),col="white",horiz=T,cex.names=0.8)
 ```
 
 Figura 4: grupos segundo a histologia (%).
