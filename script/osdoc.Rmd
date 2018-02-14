@@ -32,7 +32,8 @@ require(pander)
 require(survival)
 snc<-read.csv('../data/snc.csv')
 attach(snc)
-snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangiopericitoma"&histo!="Neuroblastoma"&histo!="Outros"),]
+snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangiopericitoma"
+&histo!="Neuroblastoma"&histo!="Outros"),]
 snc=droplevels(snc)
 detach(snc)
 ```
@@ -108,6 +109,7 @@ pander(Freq(topo,ord='desc')[1:3], style = 'rmarkdown')
 ```{r Figura6, fig.path='../fig/', fig.height=7, fig.width=7}
 ecog.score<-summary(as.factor(ecog))[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
+```
 
 Figura 6: performance na primeira consulta oncológica, ECOG (%).
 
