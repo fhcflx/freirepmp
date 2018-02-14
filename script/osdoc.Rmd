@@ -32,10 +32,13 @@ require(pander)
 require(survival)
 snc<-read.csv('../data/snc.csv')
 attach(snc)  
-
+snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangiopericitoma"&histo!="Neuroblastoma"&histo!="Outros"),]
+snc=droplevels(snc)
+detach(snc)
 ```
 
 ```{r Figura1, fig.path='../fig/', fig.height=6.5, fig.width=5}
+attach(snc)
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
@@ -71,8 +74,8 @@ pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 
 ```{r Figura4, fig.path='../fig/', fig.height=6, fig.width=7}
 require(reshape)
-snc$histo.group=combine_factor(histo,c(1,2,3,2,2,2,2,4,5,5,1,5,6,7,4,8,8,8,8,5,
-3,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,5,10,11,12,8))
+snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
+2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
 levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau","Glioma de alto
 grau","Outros tumores malignos","Tumores de células germinativas","Ependimoma","Ependimoma
 anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários","Tumor

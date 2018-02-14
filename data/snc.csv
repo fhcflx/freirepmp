@@ -1,27 +1,27 @@
 UID,sex,age,follow,survival,histo,topo,origin,ecog,lpps,ct1,rt1,surg1,ct2,rt2,surg2,ct3,ct4,ct5
-1,1,3921,317,1,Astrocitoma anaplasico,Diencefalo,Paraipaba,,,1,0,2,0,0,0,0,0,0
-2,1,433,3807,0,Meduloblastoma desmoplasico/nodular,Cerebelo,Cedro,,,2,0,1,0,0,0,0,0,0
-3,0,486,91,1,Astrocitoma,Ponte-bulbo focal,Itapipoca,,,1,0,2,0,0,0,0,0,0
+1,1,3921,317,1,Astrocitoma anaplasico,"Diencéfalo - tálamo e subtálamo, III ventrículo",Paraipaba,,,1,0,2,0,0,0,0,0,0
+2,1,433,3807,0,Meduloblastoma desmoplasico/nodular,Cerebelo - não especificado,Cedro,,,2,0,1,0,0,0,0,0,0
+3,0,486,91,1,Astrocitoma difuso/fibrilar,Tronco cerebral - bulbo,Itapipoca,,,1,0,2,0,0,0,0,0,0
 4,0,1587,460,1,Neuroblastoma,Temporal,Parambu,,,5,0,1,0,0,0,0,0,0
-5,0,1140,65,1,Meduloblastoma,Cerebelo,Itarema,,,2,0,2,0,0,0,0,0,0
-6,0,3915,1555,1,Craniofaringeoma,Supraselar,Fortaleza,,,0,0,2,7,0,0,0,0,0
-7,1,4094,143,1,Meduloblastoma desmoplasico/nodular,Cerebelo,Morada Nova,,,2,5400,2,0,0,0,0,0,0
-8,0,4670,4219,0,Germinoma,Hemisferio E,Crato,,,4,4500,2,0,0,0,0,0,0
-9,1,2891,3710,0,Meduloblastoma,Cerebelo,Caucaia,,,2,7840,1,0,0,0,0,0,0
-10,0,2632,726,1,Astrocitoma anaplasico,Ponte,Fortaleza,,,1,6000,2,0,0,0,0,0,0
-11,0,2283,4603,0,Meduloblastoma,Cerebelo,Abaiara,,,2,5400,2,0,0,0,0,0,0
-12,0,2083,3756,0,Ependimoma,IV_Vent,Itapaje,,,1,5040,1,0,0,0,0,0,0
-13,0,2110,4180,0,Meduloblastoma,Cerebelo,Capistrano,,,2,5400,2,0,0,0,0,0,0
-14,0,4717,4679,0,Astrocitoma pilocitico,Cerebelo,Fortaleza,1,,0,0,2,1,0,0,0,0,0
-15,1,4084,3778,0,Meduloblastoma,Cerebelo,Fortaleza,,,2,5400,1,0,0,0,0,0,0
-16,0,3390,256,2,Meduloblastoma,Cerebelo,Fortaleza,,,2,5400,1,0,0,0,0,0,0
-17,0,2817,12,1,Meduloblastoma,Cerebelo,Fortaleza,,,2,0,2,0,0,0,0,0,0
-18,0,658,4138,0,Meduloblastoma,Cerebelo,Itapipoca,,,2,5400,1,0,0,0,0,0,0
+5,0,1140,65,1,Meduloblastoma,Cerebelo - não especificado,Itarema,,,2,0,2,0,0,0,0,0,0
+6,0,3915,1555,1,Craniofaringioma,Diencéfalo - sela túrcica,Fortaleza,,,0,0,2,7,0,0,0,0,0
+7,1,4094,143,1,Meduloblastoma desmoplasico/nodular,Cerebelo - não especificado,Morada Nova,,,2,5400,2,0,0,0,0,0,0
+8,0,4670,4219,0,Germinoma,Supratentorial - lesão sobreposta,Crato,,,4,4500,2,0,0,0,0,0,0
+9,1,2891,3710,0,Meduloblastoma,Cerebelo - não especificado,Caucaia,,,2,7840,1,0,0,0,0,0,0
+10,0,2632,726,1,Astrocitoma anaplasico,Tronco cerebral - ponte,Fortaleza,,,1,6000,2,0,0,0,0,0,0
+11,0,2283,4603,0,Meduloblastoma,Cerebelo - não especificado,Abaiara,,,2,5400,2,0,0,0,0,0,0
+12,0,2083,3756,0,Ependimoma,IV ventrículo,Itapaje,,,1,5040,1,0,0,0,0,0,0
+13,0,2110,4180,0,Meduloblastoma,Cerebelo - não especificado,Capistrano,,,2,5400,2,0,0,0,0,0,0
+14,0,4717,4679,0,Astrocitoma pilocitico,Cerebelo - não especificado,Fortaleza,1,,0,0,2,1,0,0,0,0,0
+15,1,4084,3778,0,Meduloblastoma,Cerebelo - não especificado,Fortaleza,,,2,5400,1,0,0,0,0,0,0
+16,0,3390,256,2,Meduloblastoma,Cerebelo - não especificado,Fortaleza,,,2,5400,1,0,0,0,0,0,0
+17,0,2817,12,1,Meduloblastoma,Cerebelo - não especificado,Fortaleza,,,2,0,2,0,0,0,0,0,0
+18,0,658,4138,0,Meduloblastoma,Cerebelo - não especificado,Itapipoca,,,2,5400,1,0,0,0,0,0,0
 19,0,2113,4929,0,Meningioma,Temporal,Quiterianopolis,,,0,5400,2,0,0,2,0,0,0
-20,0,3607,160,3,Meduloblastoma,Cerebelo vermis,Massape,,,2,0,1,0,0,0,0,0,0
-21,0,3066,399,1,Ependimoma,IV_Vent,Pentecoste,,,0,5400,2,0,0,0,0,0,0
-22,0,3658,298,1,Coriocarcinoma,Pineal,Ubajara,,,4,5400,1,4,0,0,0,0,0
-23,0,1179,457,1,Neuroblastoma,Cranio,Fortaleza,,,5,0,1,0,0,0,0,0,0
+20,0,3607,160,3,Meduloblastoma,Cerebelo - vermis,Massape,,,2,0,1,0,0,0,0,0,0
+21,0,3066,399,1,Ependimoma,IV ventrículo,Pentecoste,,,0,5400,2,0,0,0,0,0,0
+22,0,3658,298,1,Coriocarcinoma,Diencéfalo - pineal e epitálamo,Ubajara,,,4,5400,1,4,0,0,0,0,0
+23,0,1179,457,1,Neuroblastoma,Calota craniana,Fortaleza,,,5,0,1,0,0,0,0,0,0
 24,0,235,5620,0,Astrocitoma difuso/fibrilar,Diencéfalo - vias ópticas e hipotálamo,Guaiuba,0,100,1,5400,1,13,0,0,9,0,0
 25,0,2654,2314,1,Meduloblastoma classico,Cerebelo - não especificado,Fortaleza,0,0,2,9640,1,2,0,0,0,0,0
 26,0,2018,5002,0,Astrocitoma difuso/fibrilar,Tronco cerebral - mesencéfalo,Independencia,2,50,1,5400,2,1,0,0,13,9,0
@@ -380,7 +380,7 @@ UID,sex,age,follow,survival,histo,topo,origin,ecog,lpps,ct1,rt1,surg1,ct2,rt2,su
 379,0,604,536,0,Sem histologia,Diencéfalo - vias ópticas e hipotálamo,Limoeiro,0,100,0,0,0,0,0,0,0,0,0
 380,0,2066,269,1,Sem histologia,Tronco cerebral - intrínseco difuso pontino - DIPG,Fortaleza,1,80,10,5400,0,0,0,0,0,0,0
 381,1,539,138,1,Meduloblastoma classico,Cerebelo - vermis,Fortaleza,4,10,0,0,2,0,0,0,0,0,0
-382,0,682,137,1,Sem histologia,Tronco cerebral - ponte atípico,Fortaleza,3,40,13,0,0,0,0,0,0,0,0
+382,0,682,137,1,Sem histologia,Tronco cerebral - intrínseco difuso pontino - DIPG,Fortaleza,3,40,13,0,0,0,0,0,0,0,0
 383,0,3711,65,0,Meningioma transicional,Supratentorial - lesão sobreposta,Maranguape,0,100,0,0,1,0,0,0,0,0,0
 384,0,5455,525,0,Glioblastoma,"Diencéfalo - tálamo e subtálamo, III ventrículo",Caucaia,3,40,9,5400,2,0,0,0,0,0,0
 385,0,2028,465,1,Sem histologia,Tronco cerebral - intrínseco difuso pontino - DIPG,Barreira,1,80,10,5400,0,0,2000,0,0,0,0
@@ -394,3 +394,13 @@ UID,sex,age,follow,survival,histo,topo,origin,ecog,lpps,ct1,rt1,surg1,ct2,rt2,su
 393,0,4113,135,0,Ependimoma anaplasico,Tronco cerebral - mesencéfalo,Ipu,2,60,0,0,2,0,0,0,0,0,0
 394,0,515,258,0,Ependimoma anaplasico,Temporal,Sobral,0,90,14,0,1,0,0,0,0,0,0
 395,0,5026,375,0,Tumor de celulas germinativas SOE,Supratentorial - lesão sobreposta,Barro,0,100,23,0,2,0,0,0,0,0,0
+396,0,5955,186,0,Xantoastrocitoma pleomorfico,Frontal,Horizonte,0,100,0,0,1,0,0,0,0,0,0
+397,1,1283,334,0,Astrocitoma difuso/fibrilar,Tronco cerebral - intrínseco difuso pontino - DIPG,Itapipoca,1,90,9,5400,2,0,0,0,0,0,0
+398,0,4525,184,0,Ganglioglioma Infantil Desmoplasico,Temporal,Itaiçaba,0,100,0,0,1,0,0,0,0,0,0
+399,1,4002,296,0,Sem histologia,Tronco cerebral - intrínseco difuso pontino - DIPG,Horizonte,1,70,0,5400,0,0,0,0,0,0,0
+400,1,1851,293,0,Sem histologia,Órbita - nervo óptico,Oros,0,100,1,0,0,0,0,0,0,0,0
+401,0,3371,243,0,Meduloblastoma desmoplasico/nodular,Cerebelo - vermis,Cruz,3,50,12,5400,2,0,0,0,0,0,0
+402,0,2086,71,0,Astrocitoma pilocitico,Cerebelo - vermis,Fortaleza,1,90,0,0,2,0,0,0,0,0,0
+403,0,2017,183,1,Sem histologia,Tronco cerebral - intrínseco difuso pontino - DIPG,Caucaia,3,40,0,0,0,0,0,0,0,0,0
+404,0,3834,196,0,Ependimoma,IV ventrículo,Iracema,2,60,0,5400,2,0,0,0,0,0,0
+405,0,2086,195,0,Meduloblastoma classico,Cerebelo - vermis,Itarema,0,100,16,0,1,0,0,0,0,0,0
