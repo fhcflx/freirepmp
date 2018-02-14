@@ -31,7 +31,7 @@ Na seção a seguir, são mostrados resultados de análises estatísticas concer
 require(pander)  
 require(survival)
 snc<-read.csv('../data/snc.csv')
-attach(snc)  
+attach(snc)
 snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangiopericitoma"&histo!="Neuroblastoma"&histo!="Outros"),]
 snc=droplevels(snc)
 detach(snc)
@@ -76,10 +76,10 @@ pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 require(reshape)
 snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
 2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
-levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau","Glioma de alto
-grau","Outros tumores malignos","Tumores de células germinativas","Ependimoma","Ependimoma
-anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários","Tumor
-teratóide-rabdóide","Sem histologia")
+levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau",
+"Glioma de alto grau","Outros tumores malignos","Tumores de células germinativas",
+"Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários",
+"Sem histologia","Tumor teratóide-rabdóide")
 par(las=2)
 par(mar=c(5,11,4,2))
 barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),
@@ -88,11 +88,12 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 4: grupos segundo a histologia (%).
 
-```{r Figura5, fig.path='../fig/', fig.height=7, fig.width=7}
+```{r Figura5, fig.path='../fig/', fig.height=7.5, fig.width=7}
 snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
 2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
 levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
-barplot(summary(as.factor(snc$who.g))*100/sum(summary(as.factor(snc$who.g))),col="white",cex.names=0.8)
+who.score=summary(snc$who.g)[c(1,3,2,4,5)]
+barplot(who.score*100/sum(who.score),col="white",cex.names=0.8)
 ```
 
 Figura 5: classificação segundo o grau da OMS (%).
@@ -101,7 +102,13 @@ Figura 5: classificação segundo o grau da OMS (%).
 require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Topografia dos tumores")
-pander(Freq(topo,ord='desc'), style = 'rmarkdown')
+pander(Freq(topo,ord='desc')[1:3], style = 'rmarkdown')
 ```
+
+```{r Figura6, fig.path='../fig/', fig.height=7, fig.width=7}
+ecog.score<-summary(as.factor(ecog))[1:5]
+barplot(ecog.score*100/sum(ecog.score),col="white")
+
+Figura 6: performance na primeira consulta oncológica, ECOG (%).
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
