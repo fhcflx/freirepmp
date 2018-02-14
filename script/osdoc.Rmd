@@ -89,8 +89,10 @@ col="white",horiz=T,cex.names=0.8)
 Figura 4: grupos segundo a histologia (%).
 
 ```{r Figura5, fig.path='../fig/', fig.height=7, fig.width=7}
-barplot(summary(as.factor(who.g))*100/sum(summary(as.factor(who.g))),col="white",
-names.arg=c("I","II","III","IV","Sem histologia"),cex.names=0.8)
+snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
+2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
+levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
+barplot(summary(as.factor(who.g))*100/sum(summary(as.factor(who.g))),col="white",cex.names=0.8)
 ```
 
 Figura 5: classificação segundo o grau da OMS (%).
