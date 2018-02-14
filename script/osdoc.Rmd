@@ -55,7 +55,7 @@ panderOptions('table.split.table', Inf)
 set.caption("Procedência dos pacientes")
 pander(Freq(origin,ord='desc'), style = 'rmarkdown')
 ```
-```{r Figura3, fig.path='../fig/', fig.height=5, fig.width=4}
+```{r Figura3, fig.path='../fig/', fig.height=4.5, fig.width=3.5}
 boxplot(follow/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
 frame.plot=F)
 ```
@@ -68,5 +68,15 @@ panderOptions('table.split.table', Inf)
 set.caption("Histologia dos tumores")
 pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 ```
+
+```{r Figura4, fig.path='../fig/', fig.height=3, fig.width=5}
+require(reshape)
+snc$histo.group=combine_factor(histo,c(1,2,3,2,2,2,2,4,5,5,1,5,6,7,4,8,8,8,8,5,3,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,5,10,11,12,8))
+levels(snc$histo.group)=c("Outros tumores benignos","Glioma de baixo grau","Glioma de alto grau","Outros tumores malignos","Tumores de células germinativas","Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários","Tumor teratóide-rabdóide","Sem histologia")
+barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),col="white")
+```
+
+Figura 4: grupos segundo a histologia (%).
+
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_

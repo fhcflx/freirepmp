@@ -3,7 +3,7 @@ UID,sex,age,follow,survival,histo,who.g,topo,origin,ecog,lpps,ct1,rt1,surg1,ct2,
 2,1,433,3807,0,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Cedro,NA,NA,2,0,1,1,0,,0,0,0
 3,0,486,91,1,Astrocitoma,2,Ponte-bulbo focal,Itapipoca,NA,NA,1,0,2,0,0,,0,0,0
 4,0,1140,65,1,Meduloblastoma,4,Cerebelo,Itarema,NA,NA,2,0,2,0,0,,0,0,0
-5,0,3915,1555,1,Craniofaringeoma,1,Supraselar,Fortaleza,NA,NA,0,0,2,0,0,,0,0,0
+5,0,3915,1555,1,Craniofaringioma,1,Supraselar,Fortaleza,NA,NA,0,0,2,0,0,,0,0,0
 6,1,4094,143,1,Meduloblastoma desmoplasico/nodular,4,Cerebelo,Morada Nova,NA,NA,2,5400,2,0,0,,0,0,0
 7,0,4670,4219,0,Germinoma,4,Hemisferio E,Crato,NA,NA,4,4500,2,0,0,,0,0,0
 8,1,2891,3710,0,Meduloblastoma,4,Cerebelo,Caucaia,NA,NA,2,7840,1,0,0,,0,0,0
