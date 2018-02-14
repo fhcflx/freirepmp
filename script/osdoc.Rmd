@@ -38,7 +38,7 @@ snc=droplevels(snc)
 detach(snc)
 ```
 
-```{r Figura1, fig.path='../fig/', fig.height=6.5, fig.width=5}
+```{r Figura1, fig.path='../fig/', fig.height=6, fig.width=5}
 attach(snc)
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
