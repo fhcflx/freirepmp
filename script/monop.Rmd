@@ -95,7 +95,7 @@ O projeto não objetiva amostrar uma população, mas sim registrar exaustivamen
 
 Foram incluídos 395 pacientes, sendo 216 do sexo masculino e 179 do sexo masculino (relação M:F igual a 1,21). A idade média ao diagnóstico foi de 7,8 anos (desvio padrão, DP = 4,37) e a mediana da idade ao diagnóstico foi de 7,3 anos (variação de 28 dias de vida a 17,9 anos) (figura 1). Em relação ao município declarado de residência ao diagnóstico, 131 (33%) pacientes declararam residência em Fortaleza ao diagnóstico, 21 (5%) pacientes em Caucaia, 11 (2,8%) pacientes em Itapipoca, 7 (1,8%) pacientes em Canindé e Maracanaú, 6 (1,5%) pacientes em Itapajé, Pacatuba, Quixadá e Sobral, e 5 ou menos pacientes em outros 105 municípios.  
 
-```{r FiguraA, fig.path='../fig/', fig.height=4, fig.width=5, echo=F}
+```{r FiguraA, fig.path='../fig/', fig.height=5, fig.width=7, echo=F}
 attach(snc)
 par(mfrow=c(1,2))
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
@@ -108,7 +108,7 @@ Figura 1: número de pacientes segundo o sexo e idade dos pacientes ao diagnóst
 
 O tempo médio de seguimento (do diagnóstico até a data da última informação) foi de 3 anos (DP = 3,1) e a mediana do tempo de seguimento foi de 1,7 anos (variação de 6 dias a 15,4 anos) (figura 2). Até o final do seguimento, 183 (46,3%) pacientes estavam vivos e 206 (52,2%) haviam ido a óbito, sendo que 6 (1,5%) dos pacientes haviam sido perdidos de seguimento.
 
-```{r FiguraB, fig.path='../fig/', fig.height=4, fig.width=3, echo=F}
+```{r FiguraB, fig.path='../fig/', fig.height=5, fig.width=4, echo=F}
 boxplot(follow/365.25,xlab="Tempo (anos)",boxwex=0.6,staplewex=0.4,
 frame.plot=F,cex.names=0.8)
 ```
