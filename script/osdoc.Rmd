@@ -128,12 +128,12 @@ Figura 7: performance na primeira consulta oncológica, ECOG (%).
 ```{r Figura8, fig.path='../fig/', fig.height=7, fig.width=7}
 require(VennDiagram)
 grid.newpage()
-draw.triple.venn(area1 = 74,
-		 area2 = 4,
-		 area3 = 28,
-		 n12 = 30,
-		 n23 = 58,
-		 n13 = 77,
+draw.triple.venn(area1 = 299,
+		 area2 = 210,
+		 area3 = 281,
+		 n12 = 148,
+		 n23 = 176,
+		 n13 = 195,
 		 n123 = 118,
 		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
 		 fill = c('gray100','gray75','gray50'),
