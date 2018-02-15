@@ -118,7 +118,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 6: grupos segundo a topografia (%)
 
-```{r Figura7, fig.path='../fig/', fig.height=6, fig.width=6}
+```{r Figura7, fig.path='../fig/', fig.height=5, fig.width=5}
 ecog.score<-summary(as.factor(ecog))[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
@@ -128,24 +128,15 @@ Figura 7: performance na primeira consulta oncológica, ECOG (%).
 ```{r Figura8, fig.path='../fig/', fig.height=7, fig.width=7}
 require(VennDiagram)
 grid.newpage()
-draw.quad.venn  (area1 = 299,
+draw.triple.venn  (area1 = 299,
 		 area2 = 210,
 		 area3 = 281,
-		 area4 = 8,
 		 n12 = 148,
-		 n14 = 0,
 		 n23 = 176,
-		 n24 = 0,
 		 n13 = 195,
-		 n34 = 0,
 		 n123 = 118,
-		 n124 = 0,
-		 n134 = 0,
-		 n234 = 0,
-		 n1234 = 0,
-		 category = c('Cirurgia','Radioterapia','Quimioterapia','Terapia
-			      alvo'),
-		 fill = c('gray100','gray75','gray50','gray30'),
+		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
+		 fill = c('gray90','gray70','gray50'),
 		 )
 ```
 
