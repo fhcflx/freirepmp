@@ -137,7 +137,7 @@ draw.triple.venn(area1 = 299,
 		 n123 = 118,
 		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
 		 fill = c('gray100','gray75','gray50'),
-		 euler = F,
+		 euler = T,
 		 scale = T)
 ```
 
