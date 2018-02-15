@@ -118,7 +118,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 6: grupos segundo a topografia (%)
 
-```{r Figura7, fig.path='../fig/', fig.height=7, fig.width=7}
+```{r Figura7, fig.path='../fig/', fig.height=6, fig.width=6}
 ecog.score<-summary(as.factor(ecog))[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
@@ -137,7 +137,8 @@ draw.triple.venn(area1 = 299,
 		 n123 = 118,
 		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
 		 fill = c('gray100','gray75','gray50'),
-		 euler = T)
+		 euler = F,
+		 scale = T)
 ```
 
 Figura 8: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
