@@ -107,10 +107,22 @@ pander(Freq(topo)[1:3], style = 'rmarkdown')
 ```
 
 ```{r Figura6, fig.path='../fig/', fig.height=7, fig.width=7}
+require(reshape)
+snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,5,6,6,6,6,4,1,4,4,4,4,5,5,5,5,7))
+levels(snc$topo.group)=c("Outros locais","Cerebelo","Linha média (supratentorial)","Supratentorial","Tronco e IV ventrículo","Medula espinhal","Ventrículos laterais")
+par(las=2)
+par(mar=c(5,11,4,2))
+barplot(sort(summary(snc$topo.group)*100/sum(summary(snc$topo.group)),decreasing=T),
+col="white",horiz=T,cex.names=0.8)
+```
+
+Figura 6: grupos segundo a topografia (%)
+
+```{r Figura7, fig.path='../fig/', fig.height=7, fig.width=7}
 ecog.score<-summary(as.factor(ecog))[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
 
-Figura 6: performance na primeira consulta oncológica, ECOG (%).
+Figura 7: performance na primeira consulta oncológica, ECOG (%).
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
