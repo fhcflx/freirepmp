@@ -125,4 +125,21 @@ barplot(ecog.score*100/sum(ecog.score),col="white")
 
 Figura 7: performance na primeira consulta oncológica, ECOG (%).
 
+```{r Figura8, fig.path='../fig/', fig.height=7, fig.width=7}
+require(VennDiagram)
+grid.newpage()
+draw.triple.venn(area1 = 74,
+		 area2 = 4,
+		 area3 = 28,
+		 n12 = 30,
+		 n23 = 58,
+		 n13 = 77,
+		 n123 = 118,
+		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
+		 fill = c('gray100','gray75','gray50'),
+		 euler = T)
+```
+
+Figura 8: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
+
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_

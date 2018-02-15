@@ -6,4 +6,4 @@ Description: Resultados, análises e documentos relativos à monografia de Paula
 Author: Francisco H C Felix <fhcflx@outlook.com>
 Maintainer: Francisco H C Felix <fhcflx@outlook.com>
 License: MIT + file LICENS
-Imports: rmarkdown, pander, DescTools, reshape
+Imports: rmarkdown, pander, DescTools, reshape, VennDiagram
