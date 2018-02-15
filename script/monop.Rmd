@@ -9,6 +9,17 @@
 
 `r format(Sys.time(), '%B %d, %Y')`
 
+```{r code1, warning=F, message=F}
+require(pander)  
+require(survival)
+snc<-read.csv('../data/snc.csv')
+attach(snc)
+snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangiopericitoma"
+&histo!="Neuroblastoma"&histo!="Outros"),]
+snc=droplevels(snc)
+detach(snc)
+```
+
 ## 1. INTRODUÇÃO:
 
 Embora os tumores do sistema nervoso central (SNC) representem 2% de todas as neoplasias em geral, têm morbi-mortalidade desproporcionalmente grandes, representando a quinta doença neoplásica com maior mortalidade, contando todas as idades. Em adultos, tanto a incidência quanto a mortalidade relacionada a tumores cerebrais têm aumentado (Batchelor, 2005). Os tumores do SNC representam a segunda forma de câncer mais comum em crianças e a principal neoplasia sólida na infância nos EUA, ocorrendo em torno de 21,3% de todas as crianças com doenças malignas (ACS, 2010), com incidência anual de 3,1 casos por 100.000 (Howlader, 2013). Estima-se que, no mundo inteiro, cerca de 8 a 15% das neoplasias pediátricas são representadas por esse grupo, sendo o mais frequente tumor sólido pediátrico (Ries, 1999; Little, 1999).
@@ -83,13 +94,49 @@ O projeto não objetiva amostrar uma população, mas sim registrar exaustivamen
 
 ## 5. RESULTADOS:
 
-Foram incluídos 395 pacientes, sendo 216 do sexo masculino e 179 do sexo masculino (relação M:F igual a 1,21). A idade média ao diagnóstico foi de 7,8 anos (desvio padrão, DP = 4,37) e a mediana da idade ao diagnóstico foi de 7,3 anos (variação de 28 dias de vida a 17,9 anos). Em relação ao município declarado de residência ao diagnóstico, 131 (33%) pacientes declararam residência em Fortaleza ao diagnóstico, 21 (5%) pacientes em Caucaia, 11 (2,8%) pacientes em Itapipoca, 7 (1,8%) pacientes em Canindé e Maracanaú, 6 (1,5%) pacientes em Itapajé, Pacatuba, Quixadá e Sobral, e 5 ou menos pacientes em outros 105 municípios.  
+Foram incluídos 395 pacientes, sendo 216 do sexo masculino e 179 do sexo masculino (relação M:F igual a 1,21). A idade média ao diagnóstico foi de 7,8 anos (desvio padrão, DP = 4,37) e a mediana da idade ao diagnóstico foi de 7,3 anos (variação de 28 dias de vida a 17,9 anos) (figura 1). Em relação ao município declarado de residência ao diagnóstico, 131 (33%) pacientes declararam residência em Fortaleza ao diagnóstico, 21 (5%) pacientes em Caucaia, 11 (2,8%) pacientes em Itapipoca, 7 (1,8%) pacientes em Canindé e Maracanaú, 6 (1,5%) pacientes em Itapajé, Pacatuba, Quixadá e Sobral, e 5 ou menos pacientes em outros 105 municípios.  
 
-O tempo médio de seguimento (do diagnóstico até a data da última informação) foi de 3 anos (DP = 3,1) e a mediana do tempo de seguimento foi de 1,7 anos (variação de 6 dias a 15,4 anos). Até o final do seguimento, 183 (46,3%) pacientes estavam vivos e 206 (52,2%) haviam ido a óbito, sendo que 6 (1,5%) dos pacientes haviam sido perdidos de seguimento.
+```{r Figura1, fig.path='../fig/', fig.height=3, fig.width=3}
+attach(snc)
+barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
+xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
+```
+
+```{r Figura2, fig.path='../fig/', fig.height=3, fig.width=3}
+boxplot(age/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
+frame.plot=F)
+```
+
+Figura 1: número de pacientes segundo o sexo e idade dos pacientes ao diagnóstico.
+
+O tempo médio de seguimento (do diagnóstico até a data da última informação) foi de 3 anos (DP = 3,1) e a mediana do tempo de seguimento foi de 1,7 anos (variação de 6 dias a 15,4 anos) (figura 2). Até o final do seguimento, 183 (46,3%) pacientes estavam vivos e 206 (52,2%) haviam ido a óbito, sendo que 6 (1,5%) dos pacientes haviam sido perdidos de seguimento.
+
+```{r Figura3, fig.path='../fig/', fig.height=3, fig.width=3}
+boxplot(follow/365.25,xlab="Tempo (anos)",boxwex=0.6,staplewex=0.4,
+frame.plot=F)
+```
+
+Figura 2: tempo de seguimento.
 
 Quanto ao diagnóstico histológico, os pacientes com astrocitoma pilocítico, astrocitoma pilomixóide, astrocitoma difuso ou fibrilar e astrocitoma sem outra especificação (SOE) foram agrupados na entidade “astrocitomas de baixo grau”, uma vez que todos são classificados como grau I ou II da OMS e têm comportamento semelhante (cit). Igualmente, pineoblastoma, tumor teratóide-rabdóide atípico, tumores neuroectodérmicos primitivos e meduloepitelioma foram agrupados como “outros tumores embrionários”. Glioblastoma e astrocitoma anaplásico, os dois gliomas malignos mais comuns, foram reportados em conjunto. Já a expressão “outros gliomas” foi usada para agregar os demais tumores gliais, incluindo oligodendroglioma, ganglioglioma (e suas variantes), xantoastrocitoma, astrocitoma subependimário de células gigantes, e glioma SOE. Lesões benignas, incluindo craniofaringioma, meningioma, cavernoma, papiloma de plexo coróide, schwannoma e adenoma de hipófise, também foram agrupados sob o rótulo “outras lesões benignas”. Tumores malignos mais raros também foram citados em conjunto como “outros tumores malignos”. A tabela 1 mostra os resultados de histologia dos tumores do sistema nervoso central.
 
-Do total de pacientes, 80 (20,2%) dos pacientes foram reportados com meduloblastoma, 67 (17%) com astrocitomas de baixo grau, 41 (10,4%) com ependimoma (incluindo todos os subtipos), 32 (8,1%) com outras lesões benignas do sistema nervoso central,  22 (5,6%) com glioblastoma ou astrocitoma anaplásico, 16 (4,1%) com outros gliomas, 14 (3,5%) com tumores de células germinativas, 10 (2,5%) com outros tumores embrionários e 8 (2%) com outros tumores malignos. Cento e cinco pacientes (26,6%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 1).
+Do total de pacientes, 80 (20,2%) dos pacientes foram reportados com meduloblastoma, 67 (17%) com astrocitomas de baixo grau, 41 (10,4%) com ependimoma (incluindo todos os subtipos), 32 (8,1%) com outras lesões benignas do sistema nervoso central,  22 (5,6%) com glioblastoma ou astrocitoma anaplásico, 16 (4,1%) com outros gliomas, 14 (3,5%) com tumores de células germinativas, 10 (2,5%) com outros tumores embrionários e 8 (2%) com outros tumores malignos. Cento e cinco pacientes (26,6%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 3).
+
+```{r Figura4, fig.path='../fig/', fig.height=6.5, fig.width=7}
+require(reshape)
+snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
+2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
+levels(snc$histo.group)=c("Outros tumores benignos","Glioma de alto grau",
+"Glioma de baixo grau","Outros tumores malignos","Tumores de células germinativas",
+"Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários",
+"Sem histologia","Tumor teratóide-rabdóide")
+par(las=1)
+par(mar=c(5,11,4,2))
+barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),
+col="white",horiz=T,cex.names=0.8)
+```
+
+Figura 3: grupos segundo a histologia (%).
 
 Ainda em relação à histologia das lesões, quanto à classificação da OMS, 62 pacientes (15,7%) tinham lesões grau I, 75 (19%) grau II, 29 (7,3%) grau III e 124 (31,4%) grau IV. Cento e cinco pacientes (26,6%), todavia, não foram biopsiados e, portanto, não tinham classificação histológica da OMS (figura 1).
 
