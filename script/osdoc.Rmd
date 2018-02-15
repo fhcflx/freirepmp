@@ -146,8 +146,7 @@ draw.quad.venn  (area1 = 299,
 		 category = c('Cirurgia','Radioterapia','Quimioterapia','Terapia
 			      alvo'),
 		 fill = c('gray100','gray75','gray50','gray30'),
-		 euler.d = T,
-		 scaled = T)
+		 )
 ```
 
 Figura 8: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
