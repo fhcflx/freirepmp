@@ -141,7 +141,7 @@ Quanto à topografia das lesões, 145 (36,7%) dos pacientes foram reportados com
 
 Quanto à capacidade de desempenho na primeira consulta oncológica, 191 (47,2%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto 68 (16,8%) tiveram nota 1, 35 (8,6%) tiveram nota 2, 46 (11,4%) tiveram nota 3 e 40 (9,9%) tiveram nota 4. Vinte e cinco pacientes (6,2%) não tiveram nota da escala ECOG atribuída (figura 5). Ainda em relação à capacidade de desempenho na primeira consulta oncológica, 150 (37%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, 40 (9,9%) com nota entre 60 e 79, 47 (11,6%) com nota entre 40 e 59, 22 (5,4%) com nota entre 20 e 39 e 120 pacientes (29,6%) foram avaliados com nota abaixo de 20. Vinte e seis pacientes (6,4%) não foram avaliados segundo a escala de Lansky.
 
-```{r FiguraD, fig.path='../fig/', fig.height=5, fig.width=7, warning=F, message=F, echo=F}
+```{r FiguraD, fig.path='../fig/', fig.height=4.5, fig.width=7, warning=F, message=F, echo=F}
 require(reshape)
 snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,2,6,6,6,6,4,1,4,4,4,4,5,5,5,5,4))
 levels(snc$topo.group)=c("Outros locais","Cerebelo","Supratentorial (linha média)","Supratentorial (extra-axial)","Tronco cerebral","Medula espinhal")
@@ -153,7 +153,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 4: grupos segundo a topografia (%)
 
-```{r FiguraE, fig.path='../fig/', fig.height=5, fig.width=7, warning=F, message=F, echo=F}
+```{r FiguraE, fig.path='../fig/', fig.height=4.5, fig.width=7, warning=F, message=F, echo=F}
 snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
 2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
 levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
@@ -172,7 +172,6 @@ Setenta e um pacientes (17,5%) sofreram um segundo procedimento cirúrgico para 
 
 ```{r FiguraF, fig.path='../fig/', fig.height=6, fig.width=6, warning=F, message=F, echo=F}
 require(VennDiagram)
-grid.newpage()
 draw.triple.venn  (area1 = 299,
 		 area2 = 210,
 		 area3 = 281,
