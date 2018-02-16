@@ -119,7 +119,7 @@ Quanto ao diagnóstico histológico, os pacientes com astrocitoma pilocítico, a
 
 Do total de pacientes, 80 (20,2%) dos pacientes foram reportados com meduloblastoma, 67 (17%) com astrocitomas de baixo grau, 41 (10,4%) com ependimoma (incluindo todos os subtipos), 32 (8,1%) com outras lesões benignas do sistema nervoso central,  22 (5,6%) com glioblastoma ou astrocitoma anaplásico, 16 (4,1%) com outros gliomas, 14 (3,5%) com tumores de células germinativas, 10 (2,5%) com outros tumores embrionários e 8 (2%) com outros tumores malignos. Cento e cinco pacientes (26,6%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 3).
 
-```{r FiguraC, fig.path='../fig/', fig.height=6.5, fig.width=7, warning=F, message=F, echo=F}
+```{r FiguraC, fig.path='../fig/', fig.height=5, fig.width=7, warning=F, message=F, echo=F}
 require(reshape)
 snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
 2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
@@ -135,15 +135,57 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 3: grupos segundo a histologia (%).
 
-Ainda em relação à histologia das lesões, quanto à classificação da OMS, 62 pacientes (15,7%) tinham lesões grau I, 75 (19%) grau II, 29 (7,3%) grau III e 124 (31,4%) grau IV. Cento e cinco pacientes (26,6%), todavia, não foram biopsiados e, portanto, não tinham classificação histológica da OMS (figura 1).
+Ainda em relação à histologia das lesões, quanto à classificação da OMS, 62 pacientes (15,7%) tinham lesões grau I, 75 (19%) grau II, 29 (7,3%) grau III e 124 (31,4%) grau IV. Cento e cinco pacientes (26,6%), todavia, não foram biopsiados e, portanto, não tinham classificação histológica da OMS (figura 5).
 
-Quanto à topografia das lesões, 145 (36,7%) dos pacientes foram reportados com tumores no cerebelo, 92 (23,3%) com tumores do tronco cerebral, 77 (19,5%) com tumores supratentoriais hemisféricos, 66 (16,7%) com tumores supratentoriais de linha média, 11 (2,8%) com tumores espinhais e 4 (1%) em outras localizações (nervo óptico, ângulo ponto-cerebelar).
+Quanto à topografia das lesões, 145 (36,7%) dos pacientes foram reportados com tumores no cerebelo, 92 (23,3%) com tumores do tronco cerebral, 77 (19,5%) com tumores supratentoriais hemisféricos, 66 (16,7%) com tumores supratentoriais de linha média, 11 (2,8%) com tumores espinhais e 4 (1%) em outras localizações (nervo óptico, ângulo ponto-cerebelar) (figura 4).
 
-Quanto à capacidade de desempenho na primeira consulta oncológica, 191 (47,2%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto 68 (16,8%) tiveram nota 1, 35 (8,6%) tiveram nota 2, 46 (11,4%) tiveram nota 3 e 40 (9,9%) tiveram nota 4. Vinte e cinco pacientes (6,2%) não tiveram nota da escala ECOG atribuída. Ainda em relação à capacidade de desempenho na primeira consulta oncológica, 150 (37%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, 40 (9,9%) com nota entre 60 e 79, 47 (11,6%) com nota entre 40 e 59, 22 (5,4%) com nota entre 20 e 39 e 120 pacientes (29,6%) foram avaliados com nota abaixo de 20. Vinte e seis pacientes (6,4%) não foram avaliados segundo a escala de Lansky.
+Quanto à capacidade de desempenho na primeira consulta oncológica, 191 (47,2%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto 68 (16,8%) tiveram nota 1, 35 (8,6%) tiveram nota 2, 46 (11,4%) tiveram nota 3 e 40 (9,9%) tiveram nota 4. Vinte e cinco pacientes (6,2%) não tiveram nota da escala ECOG atribuída (figura 5). Ainda em relação à capacidade de desempenho na primeira consulta oncológica, 150 (37%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, 40 (9,9%) com nota entre 60 e 79, 47 (11,6%) com nota entre 40 e 59, 22 (5,4%) com nota entre 20 e 39 e 120 pacientes (29,6%) foram avaliados com nota abaixo de 20. Vinte e seis pacientes (6,4%) não foram avaliados segundo a escala de Lansky.
 
-Em relação ao tratamento instituído, 299 pacientes (74%) sofreram cirurgia pelo menos uma vez, 281 (69%) receberam algum tipo de quimioterapia antineoplásica (QT) e 210 (52%) foram tratados com radioterapia (RT). Setenta e quatro pacientes (18,3%) foram tratados apenas com cirurgia, 28 (7%) foram tratados apenas com QT e 4 (1%) foram tratados apenas com RT. Dentre os 281 pacientes tratados farmacologicamente, 8 pacientes (2%) receberam terapia-alvo (fármacos anti-neoplásicos sem efeito citotóxico em células saudáveis). As drogas usadas como terapia-alvo foram propranolol, tamoxifeno, everolimo e nimotuzumabe. Setenta e oito pacientes (19,3%) receberam um segundo esquema de QT após recidiva ou progressão da doença, enquanto 19 (4,7%) receberam o terceiro esquema, 4 (1%) receberam o quarto esquema e 1 paciente apenas chegou a receber o quinto esquema de QT.
+```{r FiguraD, fig.path='../fig/', fig.height=7, fig.width=7, warning=F, message=F, echo=F}
+require(reshape)
+snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,2,6,6,6,6,4,1,4,4,4,4,5,5,5,5,4))
+levels(snc$topo.group)=c("Outros locais","Cerebelo","Supratentorial (linha média)","Supratentorial (extra-axial)","Tronco cerebral","Medula espinhal")
+par(las=1)
+par(mar=c(5,11,4,2))
+barplot(sort(summary(snc$topo.group)*100/sum(summary(snc$topo.group)),decreasing=T),
+col="white",horiz=T,cex.names=0.8)
+```
 
-Setenta e um pacientes (17,5%) sofreram um segundo procedimento cirúrgico para retirada de tumor após recidiva ou progressão. Por fim, 15 pacientes (3,7%) foram tratados uma segunda vez com RT, após recidiva ou progressão tumoral (figura 2).
+Figura 4: grupos segundo a topografia (%)
+
+```{r FiguraE, fig.path='../fig/', fig.height=5, fig.width=7, warning=F, message=F, echo=F}
+snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
+2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
+levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
+who.score=summary(snc$who.g)[c(1,3,2,4,5)]
+ecog.score<-summary(as.factor(ecog))[1:5]
+par(mfrow=c(1,2))
+barplot(who.score*100/sum(who.score),col="white",cex.names=0.6)
+barplot(ecog.score*100/sum(ecog.score),col="white",cex.names=0.6)
+```
+
+Figura 5: classificação segundo o grau da OMS (%) e performance na primeira consulta oncológica, ECOG (%).
+
+Em relação ao tratamento instituído, 299 pacientes (74%) sofreram cirurgia pelo menos uma vez, 281 (69%) receberam algum tipo de quimioterapia antineoplásica (QT) e 210 (52%) foram tratados com radioterapia (RT). Setenta e quatro pacientes (18,3%) foram tratados apenas com cirurgia, 28 (7%) foram tratados apenas com QT e 4 (1%) foram tratados apenas com RT. Dentre os 281 pacientes tratados farmacologicamente, 8 pacientes (2%) receberam terapia-alvo (fármacos anti-neoplásicos sem efeito citotóxico em células saudáveis). As drogas usadas como terapia-alvo foram propranolol, tamoxifeno, everolimo e nimotuzumabe. Setenta e oito pacientes (19,3%) receberam um segundo esquema de QT após recidiva ou progressão da doença, enquanto 19 (4,7%) receberam o terceiro esquema, 4 (1%) receberam o quarto esquema e 1 paciente apenas chegou a receber o quinto esquema de QT (figura 6).
+
+Setenta e um pacientes (17,5%) sofreram um segundo procedimento cirúrgico para retirada de tumor após recidiva ou progressão. Por fim, 15 pacientes (3,7%) foram tratados uma segunda vez com RT, após recidiva ou progressão tumoral.
+
+```{r FiguraF, fig.path='../fig/', fig.height=7, fig.width=7}
+require(VennDiagram)
+grid.newpage()
+draw.triple.venn  (area1 = 299,
+		 area2 = 210,
+		 area3 = 281,
+		 n12 = 148,
+		 n23 = 176,
+		 n13 = 195,
+		 n123 = 118,
+		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
+		 fill = c('gray90','gray70','gray50'),
+		 )
+```
+
+Figura 6: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
 
 ## 6. DISCUSSÃO:
 
