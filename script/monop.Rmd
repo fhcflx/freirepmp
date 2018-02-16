@@ -170,9 +170,9 @@ Em relação ao tratamento instituído, 299 pacientes (74%) sofreram cirurgia pe
 
 Setenta e um pacientes (17,5%) sofreram um segundo procedimento cirúrgico para retirada de tumor após recidiva ou progressão. Por fim, 15 pacientes (3,7%) foram tratados uma segunda vez com RT, após recidiva ou progressão tumoral.
 
-```{r FiguraF, fig.path='../fig/', fig.height=6, fig.width=6, warning=F, message=F, echo=F}
+```{r FiguraF, fig.path='../fig/', fig.height=5, fig.width=5, warning=F, message=F, echo=F}
 require(VennDiagram)
-draw.triple.venn  (area1 = 299,
+v<-draw.triple.venn  (area1 = 299,
 		 area2 = 210,
 		 area3 = 281,
 		 n12 = 148,
@@ -182,6 +182,7 @@ draw.triple.venn  (area1 = 299,
 		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
 		 fill = c('gray90','gray70','gray50'),
 		 )
+grid.draw(v)
 ```
 
 Figura 6: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
