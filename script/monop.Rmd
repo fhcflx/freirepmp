@@ -119,7 +119,7 @@ Figura 2: tempo de seguimento.
 
 Quanto ao diagnóstico histológico, os pacientes com astrocitoma pilocítico, astrocitoma pilomixóide, astrocitoma difuso ou fibrilar e astrocitoma sem outra especificação (SOE) foram agrupados na entidade “astrocitomas de baixo grau”, uma vez que todos são classificados como grau I ou II da OMS e têm comportamento semelhante (cit). Igualmente, pineoblastoma, tumor teratóide-rabdóide atípico, tumores neuroectodérmicos primitivos e meduloepitelioma foram agrupados como “outros tumores embrionários”. Glioblastoma e astrocitoma anaplásico, os dois gliomas malignos mais comuns, foram reportados em conjunto. Já a expressão “outros gliomas” foi usada para agregar os demais tumores gliais, incluindo oligodendroglioma, ganglioglioma (e suas variantes), xantoastrocitoma, astrocitoma subependimário de células gigantes, e glioma SOE. Lesões benignas, incluindo craniofaringioma, meningioma, cavernoma, papiloma de plexo coróide, schwannoma e adenoma de hipófise, também foram agrupados sob o rótulo “outras lesões benignas”. Tumores malignos mais raros também foram citados em conjunto como “outros tumores malignos”. A tabela 1 mostra os resultados de histologia dos tumores do sistema nervoso central.
 
-```{r code1, warning=F, message=F, echo=F}
+```{r code2, warning=F, message=F, echo=F}
 require(reshape)
 snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
 2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
