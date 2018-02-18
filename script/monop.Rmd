@@ -17,6 +17,7 @@ snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangioperi
 &histo!="Neuroblastoma"&histo!="Outros"),]
 snc=droplevels(snc)
 detach(snc)
+attach(snc)
 ```
 
 ## 1. INTRODUÇÃO:
@@ -93,10 +94,9 @@ O projeto não objetiva amostrar uma população, mas sim registrar exaustivamen
 
 ## 5. RESULTADOS:
 
-Foram incluídos 395 pacientes, sendo 216 do sexo masculino e 179 do sexo masculino (relação M:F igual a 1,21). A idade média ao diagnóstico foi de 7,8 anos (desvio padrão, DP = 4,37) e a mediana da idade ao diagnóstico foi de 7,3 anos (variação de 28 dias de vida a 17,9 anos) (figura 1). Em relação ao município declarado de residência ao diagnóstico, 131 (33%) pacientes declararam residência em Fortaleza ao diagnóstico, 21 (5%) pacientes em Caucaia, 11 (2,8%) pacientes em Itapipoca, 7 (1,8%) pacientes em Canindé e Maracanaú, 6 (1,5%) pacientes em Itapajé, Pacatuba, Quixadá e Sobral, e 5 ou menos pacientes em outros 105 municípios.  
+Foram incluídos `sum(summary(origin))` pacientes, sendo `summary(as.factor(sex))[1]` do sexo masculino e `summary(as.factor(sex))[2]` do sexo masculino (relação M:F igual a `round(summary(as.factor(sex))[1]/summary(as.factor(sex))[2],2)`). A idade média ao diagnóstico foi de `round(mean(age/365.25),1)` anos (desvio padrão, DP = `round(sd(age/365.25),2)`) e a mediana da idade ao diagnóstico foi de `round(median(age/365.25),1)` anos (variação de `round(min(age),1)` dias de vida a `round(max(age/365.25),1)` anos) (figura 1). Em relação ao município declarado de residência ao diagnóstico, `Freq(origin,ord='desc')[1,][2]` (`round(Freq(origin,ord='desc')[1,][3]*100,1)`%) pacientes declararam residência em `Freq(origin,ord='desc')[1,][1]` ao diagnóstico, `Freq(origin,ord='desc')[2,][2]` (`round(Freq(origin,ord='desc')[2,][3]*100,1)`%) pacientes em `Freq(origin,ord='desc')[2,][1]`, `Freq(origin,ord='desc')[3,][2]` (`round(Freq(origin,ord='desc')[3,][3]*100,1)`%) pacientes em `Freq(origin,ord='desc')[3,][1]`, `Freq(origin,ord='desc')[4,][2]` (`round(Freq(origin,ord='desc')[4,][3]*100,1)`%) pacientes em `Freq(origin,ord='desc')[4,][1]` e `Freq(origin,ord='desc')[5,][1]`, `Freq(origin,ord='desc')[6,][2]` (`round(Freq(origin,ord='desc')[6,][3]*100,1)`%) pacientes em `Freq(origin,ord='desc')[6,][1]`, `Freq(origin,ord='desc')[7,][1]`, `Freq(origin,ord='desc')[8,][1]` e `Freq(origin,ord='desc')[9,][1]`, e `Freq(origin,ord='desc')[9,][2]-1` ou menos pacientes em outros `nlevels(origin)-9` municípios.  
 
 ```{r FiguraA, fig.path='../fig/', fig.height=5, fig.width=7, echo=F}
-attach(snc)
 par(mfrow=c(1,2))
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0,cex.names=0.6)
