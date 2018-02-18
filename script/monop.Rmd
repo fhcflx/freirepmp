@@ -119,16 +119,21 @@ Figura 2: tempo de seguimento.
 
 Quanto ao diagnóstico histológico, os pacientes com astrocitoma pilocítico, astrocitoma pilomixóide, astrocitoma difuso ou fibrilar e astrocitoma sem outra especificação (SOE) foram agrupados na entidade “astrocitomas de baixo grau”, uma vez que todos são classificados como grau I ou II da OMS e têm comportamento semelhante (cit). Igualmente, pineoblastoma, tumor teratóide-rabdóide atípico, tumores neuroectodérmicos primitivos e meduloepitelioma foram agrupados como “outros tumores embrionários”. Glioblastoma e astrocitoma anaplásico, os dois gliomas malignos mais comuns, foram reportados em conjunto. Já a expressão “outros gliomas” foi usada para agregar os demais tumores gliais, incluindo oligodendroglioma, ganglioglioma (e suas variantes), xantoastrocitoma, astrocitoma subependimário de células gigantes, e glioma SOE. Lesões benignas, incluindo craniofaringioma, meningioma, cavernoma, papiloma de plexo coróide, schwannoma e adenoma de hipófise, também foram agrupados sob o rótulo “outras lesões benignas”. Tumores malignos mais raros também foram citados em conjunto como “outros tumores malignos”. A tabela 1 mostra os resultados de histologia dos tumores do sistema nervoso central.
 
-Do total de pacientes, 80 (20,2%) dos pacientes foram reportados com meduloblastoma, 67 (17%) com astrocitomas de baixo grau, 41 (10,4%) com ependimoma (incluindo todos os subtipos), 32 (8,1%) com outras lesões benignas do sistema nervoso central,  22 (5,6%) com glioblastoma ou astrocitoma anaplásico, 16 (4,1%) com outros gliomas, 14 (3,5%) com tumores de células germinativas, 10 (2,5%) com outros tumores embrionários e 8 (2%) com outros tumores malignos. Cento e cinco pacientes (26,6%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 3).
-
-```{r FiguraC, fig.path='../fig/', fig.height=6, fig.width=7, warning=F, message=F, echo=F}
+```{r code1, warning=F, message=F, echo=F}
 require(reshape)
 snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
 2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
 levels(snc$histo.group)=c("Outros tumores benignos","Glioma de alto grau",
-"Glioma de baixo grau","Outros tumores malignos","Tumores de células germinativas",
+"Astrocitoma de baixo grau","Outros tumores malignos","Tumores de células germinativas",
 "Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários",
 "Sem histologia","Tumor teratóide-rabdóide")
+detach(snc)
+attach(snc)
+```
+
+Do total de pacientes, `r summary(histo.group)[9]` (`r round(summary(histo.group)[9]*100/sum(summary(histo.group)),1)`%) dos pacientes foram reportados com meduloblastoma, `r summary(histo.group)[3]` (`r round(summary(histo.group)[3]*100/sum(summary(histo.group)),1)`%) com astrocitomas de baixo grau, `r sum(summary(histo.group)[6:7])` (`r round(sum(summary(histo.group)[6:7])*100/sum(summary(histo.group)),1)`%) com ependimoma (incluindo todos os subtipos), `r summary(histo.group)[1]` (`r round(summary(histo.group)[1]*100/sum(summary(histo.group)),1)`%) com outras lesões benignas do sistema nervoso central,  `r summary(histo.group)[2]` (`r round(summary(histo.group)[2]*100/sum(summary(histo.group)),1)`%) com glioblastoma ou astrocitoma anaplásico, `r summary(histo.group)[8]` (`r round(summary(histo.group)[8]*100/sum(summary(histo.group)),1)`%) com outros gliomas, `r summary(histo.group)[5]` (`r round(summary(histo.group)[5]*100/sum(summary(histo.group)),1)`%) com tumores de células germinativas, `r summary(histo.group)[10]` (`r round(summary(histo.group)[10]*100/sum(summary(histo.group)),1)`%) com outros tumores embrionários e `r summary(histo.group)[4]` (`r round(summary(histo.group)[4]*100/sum(summary(histo.group)),1)`%) com outros tumores malignos. Um total de `r summary(histo.group)[11]` pacientes (`r round(summary(histo.group)[11]*100/sum(summary(histo.group)),1)`%) não tiveram suas lesões abordadas cirurgicamente e, portanto, não tiveram diagnóstico histológico (figura 3).
+
+```{r FiguraC, fig.path='../fig/', fig.height=6, fig.width=7, warning=F, message=F, echo=F}
 par(las=1)
 par(mar=c(5,11,4,2))
 barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),
