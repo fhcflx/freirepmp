@@ -119,25 +119,38 @@ col="white",horiz=T,cex.names=0.8)
 Figura 6: grupos segundo a topografia (%)
 
 ```{r Figura7, fig.path='../fig/', fig.height=5, fig.width=5}
-ecog.score<-summary(as.factor(ecog))[1:5]
+levels(ecog)[1]<-NA
+levels(ecog)[1]<-0
+levels(ecog)[2]<-1
+levels(ecog)[3]<-2
+levels(ecog)[4]<-3
+levels(ecog)[5]<-4
+ecog.score<-summary(ecog)[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
+```
+
+```{r table4, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
+require(DescTools)
+panderOptions('table.split.table', Inf)
+set.caption("Tratamentos utilizados como primeira linha")
+pander(Freq(ct1,ord='desc'), style = 'rmarkdown')
 ```
 
 Figura 7: performance na primeira consulta oncológica, ECOG (%).
 
 ```{r Figura8, fig.path='../fig/', fig.height=7, fig.width=7}
 require(VennDiagram)
-grid.newpage()
-draw.triple.venn  (area1 = 299,
-		 area2 = 210,
-		 area3 = 281,
-		 n12 = 148,
-		 n23 = 176,
-		 n13 = 195,
-		 n123 = 118,
+v<-draw.triple.venn  (area1 = length(subset(surg1,surg1!=0)),
+		 area2 = length(subset(rt1,rt1!=0)),
+		 area3 = length(subset(ct1,ct1!="Não realizou quimioterapia")),
+		 n12 = length(subset(surg1,surg1!=0&rt1!=0)),
+		 n23 = length(subset(surg1,rt1!=0&ct1!="Não realizou quimioterapia")),
+		 n13 = length(subset(surg1,surg1!=0&ct1!="Não realizou quimioterapia")),
+		 n123 = length(subset(surg1,surg1!=0&rt1!=0&ct1!="Não realizou quimioterapia")),
 		 category = c('Cirurgia','Radioterapia','Quimioterapia'),
 		 fill = c('gray90','gray70','gray50'),
 		 )
+grid.draw(v)
 ```
 
 Figura 8: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.

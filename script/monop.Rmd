@@ -5,7 +5,7 @@
 
 **Abstract:** Um banco de dados de pacientes pediátricos com tumores do sistema nervoso central diagnosticados em um grande hospital estadual foi criado pelos autores. Foram incluídos 395 pacientes com tumores cerebrais primários.
 
-**Keywords:** tumores do sistema nervoso central, cancerologia pediátrica, estística escritiva
+**Keywords:** tumores do sistema nervoso central, cancerologia pediátrica, estatística escritiva
 
 `r format(Sys.time(), '%B %d, %Y')`
 
@@ -158,7 +158,28 @@ Ainda em relação à histologia das lesões, quanto à classificação da OMS, 
 
 Quanto à topografia das lesões, `r summary(topo.group)[2]` (`r round(summary(topo.group)[2]*100/sum(summary(topo.group)),1)`%) dos pacientes foram reportados com tumores no cerebelo, `r summary(topo.group)[5]` (`r round(summary(topo.group)[5]*100/sum(summary(topo.group)),1)`%) com tumores do tronco cerebral, `r summary(topo.group)[4]` (`r round(summary(topo.group)[4]*100/sum(summary(topo.group)),1)`%) com tumores supratentoriais hemisféricos, `r summary(topo.group)[3]` (`r round(summary(topo.group)[3]*100/sum(summary(topo.group)),1)`%) com tumores supratentoriais de linha média, `r summary(topo.group)[6]` (`r round(summary(topo.group)[6]*100/sum(summary(topo.group)),1)`%) com tumores espinhais e `r summary(topo.group)[1]` (`r round(summary(topo.group)[1]*100/sum(summary(topo.group)),1)`%) em outras localizações (nervo óptico, ângulo ponto-cerebelar) (figura 4).
 
-Quanto à capacidade de desempenho na primeira consulta oncológica, `r summary(as.factor(ecog))[1]` (`r round(summary(as.factor(ecog))[1]*100/sum(summary(as.factor(ecog))),1)`%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto `r summary(as.factor(ecog))[2]` (`r round(summary(as.factor(ecog))[2]*100/sum(summary(as.factor(ecog))),1)`%) tiveram nota 1, `r summary(as.factor(ecog))[3]` (`r round(summary(as.factor(ecog))[3]*100/sum(summary(as.factor(ecog))),1)`%) tiveram nota 2, `r summary(as.factor(ecog))[4]` (`r round(summary(as.factor(ecog))[4]*100/sum(summary(as.factor(ecog))),1)`%) tiveram nota 3 e `r summary(as.factor(ecog))[5]` (`r round(summary(as.factor(ecog))[5]*100/sum(summary(as.factor(ecog))),1)`%) tiveram nota 4. Um total de `r summary(as.factor(ecog))[6]` pacientes (`r round(summary(as.factor(ecog))[6]*100/sum(summary(as.factor(ecog))),1)`%) não tiveram nota da escala ECOG atribuída (figura 5). Ainda em relação à capacidade de desempenho na primeira consulta oncológica, `r length(subset(lpps,lpps>79))` (`r round(length(subset(lpps,lpps>79))*100/length(lpps),1)`%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, `r length(subset(lpps,lpps<80&lpps>59))` (`r round(length(subset(lpps,lpps<80&lpps>59))*100/length(lpps),1)`%) com nota entre 60 e 79, `r length(subset(lpps,lpps<60&lpps>39))` (`r round(length(subset(lpps,lpps<60&lpps>39))*100/length(lpps),1)`%) com nota entre 40 e 59, `r length(subset(lpps,lpps<40&lpps>19))` (`r round(length(subset(lpps,lpps<40&lpps>19))*100/length(lpps),1)`%) com nota entre 20 e 39 e `r length(subset(lpps,lpps<20))` pacientes (`r round(length(subset(lpps,lpps<20))*100/length(lpps),1)`%) foram avaliados com nota abaixo de 20. Um total de `r summary(as.factor(lpps))[12]` pacientes (`r round(summary(as.factor(lpps))[12]*100/length(lpps),1)`%) não foram avaliados segundo a escala de Lansky.
+```{r code4, warning=F, message=F, echo=F}
+levels(ecog)[1]<-NA
+levels(ecog)[1]<-0
+levels(ecog)[2]<-1
+levels(ecog)[3]<-2
+levels(ecog)[4]<-3
+levels(ecog)[5]<-4
+levels(lpps)[1]<-NA
+levels(lpps)[1]<-10
+levels(lpps)[2]<-100
+levels(lpps)[3]<-20
+levels(lpps)[4]<-30
+levels(lpps)[5]<-40
+levels(lpps)[6]<-50
+levels(lpps)[7]<-60
+levels(lpps)[8]<-70
+levels(lpps)[9]<-80
+levels(lpps)[10]<-90
+lpps=as.numeric(levels(lpps))[lpps]
+```
+
+Quanto à capacidade de desempenho na primeira consulta oncológica, `r summary(ecog)[1]` (`r round(summary(ecog)[1]*100/sum(summary(ecog)),1)`%) pacientes foram descritos com nota 0 na escala de ECOG/OMS/Zubrod, enquanto `r summary(ecog)[2]` (`r round(summary(ecog)[2]*100/sum(summary(ecog)),1)`%) tiveram nota 1, `r summary(ecog)[3]` (`r round(summary(ecog)[3]*100/sum(summary(ecog)),1)`%) tiveram nota 2, `r summary(ecog)[4]` (`r round(summary(ecog)[4]*100/sum(summary(ecog)),1)`%) tiveram nota 3 e `r summary(ecog)[5]` (`r round(summary(ecog)[5]*100/sum(summary(ecog)),1)`%) tiveram nota 4. Um total de `r summary(ecog)[6]` pacientes (`r round(summary(ecog)[6]*100/sum(summary(ecog)),1)`%) não tiveram nota da escala ECOG atribuída (figura 5). Ainda em relação à capacidade de desempenho na primeira consulta oncológica, `r length(subset(lpps,lpps>79))` (`r round(length(subset(lpps,lpps>79))*100/length(lpps),1)`%) pacientes foram avaliados com uma nota entre 80 e 100 na escala de Lansky, `r length(subset(lpps,lpps<80&lpps>59))` (`r round(length(subset(lpps,lpps<80&lpps>59))*100/length(lpps),1)`%) com nota entre 60 e 79, `r length(subset(lpps,lpps<60&lpps>39))` (`r round(length(subset(lpps,lpps<60&lpps>39))*100/length(lpps),1)`%) com nota entre 40 e 59, `r length(subset(lpps,lpps<40&lpps>19))` (`r round(length(subset(lpps,lpps<40&lpps>19))*100/length(lpps),1)`%) com nota entre 20 e 39 e `r length(subset(lpps,lpps<20))` pacientes (`r round(length(subset(lpps,lpps<20))*100/length(lpps),1)`%) foram avaliados com nota abaixo de 20. Um total de `r summary(as.factor(lpps))[12]` pacientes (`r round(summary(as.factor(lpps))[12]*100/length(lpps),1)`%) não foram avaliados segundo a escala de Lansky.
 
 ```{r FiguraD, fig.path='../fig/', fig.height=4.5, fig.width=7, warning=F, message=F, echo=F}
 par(las=1)
@@ -170,7 +191,7 @@ col="white",horiz=T,cex.names=0.8)
 Figura 4: grupos segundo a topografia (%)
 
 ```{r FiguraE, fig.path='../fig/', fig.height=4.5, fig.width=7, warning=F, message=F, echo=F}
-ecog.score<-summary(as.factor(ecog))[1:5]
+ecog.score<-summary(ecog)[1:5]
 par(mfrow=c(1,2))
 barplot(who.score*100/sum(who.score),col="white",cex.names=0.6)
 barplot(ecog.score*100/sum(ecog.score),col="white",cex.names=0.6)
