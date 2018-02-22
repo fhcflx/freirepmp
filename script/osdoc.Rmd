@@ -86,7 +86,7 @@ set.caption("Histologia dos tumores")
 pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 ```
 
-```{r Figura4, fig.path='../fig/', fig.height=7, fig.width=7}
+```{r Figura4, fig.path='../fig/', fig.height=8, fig.width=7}
 par(las=1)
 par(mar=c(5,11,4,2))
 barplot(sort(summary(histo.group)*100/sum(summary(histo.group)),decreasing=T),
@@ -116,7 +116,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 6: grupos segundo a topografia (%)
 
-```{r Figura7, fig.path='../fig/', fig.height=5, fig.width=5}
+```{r Figura7, fig.path='../fig/', fig.height=7, fig.width=5}
 levels(ecog)[1]<-NA
 levels(ecog)[1]<-0
 levels(ecog)[2]<-1
@@ -126,6 +126,8 @@ levels(ecog)[5]<-4
 ecog.score<-summary(ecog)[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
+
+Figura 7: grupos segundo a performance (ECOG) na primeira consulta.
 
 ```{r table4, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
 panderOptions('table.split.table', Inf)
