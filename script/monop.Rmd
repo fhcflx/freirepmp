@@ -102,9 +102,9 @@ Foram incluídos `r sum(summary(origin))` pacientes, sendo `r summary(as.factor(
 ```{r FiguraA, fig.path='../fig/', fig.height=5, fig.width=7, echo=F}
 par(mfrow=c(1,2))
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
-xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0,cex.names=0.6)
+xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0,cex.names=0.7)
 boxplot(age/365.25,xlab="Idade (anos)",boxwex=0.6,staplewex=0.4,
-frame.plot=F,cex.names=0.6)
+frame.plot=F,cex.names=0.7)
 ```
 
 Figura 1: número de pacientes segundo o sexo e idade dos pacientes ao diagnóstico.
@@ -149,7 +149,7 @@ snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,2,6,6,6,6,4,1,4,4,4,4,5
 levels(snc$topo.group)=c("Outros locais","Cerebelo","Supratentorial (linha média)","Supratentorial (extra-axial)","Tronco cerebral","Medula espinhal")
 snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
 2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
-levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
+levels(snc$who.g)=c("I","III","II","IV","0")
 who.score=summary(snc$who.g)[c(1,3,2,4,5)]
 detach(snc)
 attach(snc)
@@ -194,11 +194,11 @@ Figura 4: grupos segundo a topografia (%)
 ```{r FiguraE, fig.path='../fig/', fig.height=4.5, fig.width=7, warning=F, message=F, echo=F}
 ecog.score<-summary(ecog)[1:5]
 par(mfrow=c(1,2))
-barplot(who.score*100/sum(who.score),col="white",cex.names=0.6)
-barplot(ecog.score*100/sum(ecog.score),col="white",cex.names=0.6)
+barplot(who.score*100/sum(who.score),col="white",cex.names=0.7)
+barplot(ecog.score*100/sum(ecog.score),col="white",cex.names=0.7)
 ```
 
-Figura 5: classificação segundo o grau da OMS (%) e performance na primeira consulta oncológica, ECOG (%).
+Figura 5: classificação segundo o grau da OMS (%) (0 = sem histologia) e performance na primeira consulta oncológica, ECOG (%).
 
 Em relação ao tratamento instituído, `r length(subset(surg1,surg1>0))` pacientes (`r round(length(subset(surg1,surg1>0))*100/length(surg1),1)`%) sofreram cirurgia pelo menos uma vez, `r length(subset(ct1,ct1!="Não realizou quimioterapia"))` (`r round(length(subset(ct1,ct1!="Não realizou quimioterapia"))*100/length(ct1),1)`%) receberam algum tipo de quimioterapia antineoplásica (QT) e `r length(subset(rt1,rt1>0))` (`r round(length(subset(rt1,rt1>0))*100/length(rt1),1)`%) foram tratados com radioterapia (RT). Um total de `r length(subset(surg1,surg1>0&rt1==0&ct1=="Não realizou quimioterapia"))` pacientes (`r round(length(subset(surg1,surg1>0&rt1==0&ct1=="Não realizou quimioterapia"))*100/length(surg1),1)`%) foram tratados apenas com cirurgia, `r length(subset(surg1,surg1==0&rt1==0&ct1!="Não realizou quimioterapia"))` (`r round(length(subset(surg1,surg1==0&rt1==0&ct1!="Não realizou quimioterapia"))*100/length(ct1),1)`%) foram tratados apenas com QT e `r length(subset(surg1,surg1==0&rt1!=0&ct1=="Não realizou quimioterapia"))` (`r round(length(subset(surg1,surg1==0&rt1!=0&ct1=="Não realizou quimioterapia"))*100/length(rt1),1)`%) foram tratados apenas com RT. Dentre os `r length(subset(ct1,ct1!="Não realizou quimioterapia"))` pacientes tratados farmacologicamente, `r length(subset(ct1,ct1=="Terapia alvo - everolimo"|ct2=="CIMAHer"|ct2=="Terapia alvo - everolimo"|ct3=="CIMAHer"|ct3=="Terapia alvo - everolimo"))` pacientes (`r round(length(subset(ct1,ct1=="Terapia alvo - everolimo"|ct2=="CIMAHer"|ct2=="Terapia alvo - everolimo"|ct3=="CIMAHer"|ct3=="Terapia alvo - everolimo"))*100/length(ct1),1)`%) receberam terapia-alvo (fármacos anti-neoplásicos sem efeito citotóxico em células saudáveis). As drogas usadas como terapia-alvo foram everolimo e nimotuzumabe. Um total de `r length(subset(ct2,ct2!=""))` pacientes (`r round(length(subset(ct2,ct2!=""))*100/length(ct2),1)`%) receberam um segundo esquema de QT após recidiva ou progressão da doença, enquanto `r length(subset(ct3,ct3!=""))` (`r round(length(subset(ct3,ct3!=""))*100/length(ct3),1)`%) receberam o terceiro esquema, `r length(subset(ct4,ct4!=""))` (`r round(length(subset(ct4,ct4!=""))*100/length(ct4),1)`%) receberam o quarto esquema e 1 paciente apenas chegou a receber o quinto esquema de QT (figura 6).
 
