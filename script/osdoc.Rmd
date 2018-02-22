@@ -117,13 +117,13 @@ col="white",horiz=T,cex.names=0.8)
 Figura 6: grupos segundo a topografia (%)
 
 ```{r Figura7, fig.path='../fig/', fig.height=7, fig.width=5}
-levels(ecog)[1]<-NA
-levels(ecog)[1]<-0
-levels(ecog)[2]<-1
-levels(ecog)[3]<-2
-levels(ecog)[4]<-3
-levels(ecog)[5]<-4
-ecog.score<-summary(ecog)[1:5]
+#levels(ecog)[1]<-NA
+#levels(ecog)[1]<-0
+#levels(ecog)[2]<-1
+#levels(ecog)[3]<-2
+#levels(ecog)[4]<-3
+#levels(ecog)[5]<-4
+#cog.score<-summary(ecog)[1:5]
 barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
 
