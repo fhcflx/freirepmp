@@ -216,6 +216,7 @@ v<-draw.triple.venn  (area1 = length(subset(surg1,surg1!=0)),
 		 fill = c('gray90','gray70','gray50'),
 		 )
 grid.draw(v)
+detach(snc)
 ```
 
 Figura 6: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.

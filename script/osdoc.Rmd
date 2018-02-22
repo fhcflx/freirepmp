@@ -95,7 +95,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 4: grupos segundo a histologia (%).
 
-```{r Figura5, fig.path='../fig/', fig.height=7.5, fig.width=7}
+```{r Figura5, fig.path='../fig/', fig.height=8, fig.width=7}
 barplot(who.score*100/sum(who.score),col="white",cex.names=0.8)
 ```
 
