@@ -116,7 +116,7 @@ col="white",horiz=T,cex.names=0.8)
 
 Figura 6: grupos segundo a topografia (%)
 
-```{r Figura7, fig.path='../fig/', fig.height=7, fig.width=5}
+```{r Figura7, fig.path='../fig/', fig.height=7.5, fig.width=6}
 #levels(ecog)[1]<-NA
 #levels(ecog)[1]<-0
 #levels(ecog)[2]<-1
