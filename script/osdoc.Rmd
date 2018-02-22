@@ -133,7 +133,7 @@ Figura 7: grupos segundo a performance (ECOG) na primeira consulta.
 ```{r table4, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
 panderOptions('table.split.table', Inf)
 set.caption("Tratamentos utilizados como primeira linha")
-pander(Freq(ct1,ord='desc'), style = 'rmarkdown')
+pander(Freq(ct1,ord='desc')[-4], style = 'rmarkdown')
 ```
 
 Figura 7: performance na primeira consulta oncológica, ECOG (%).

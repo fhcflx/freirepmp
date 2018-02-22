@@ -19,6 +19,7 @@ snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangioperi
 snc=droplevels(snc)
 detach(snc)
 attach(snc)
+options(OutDec= ",")
 ```
 
 ## 1. INTRODUÇÃO:
