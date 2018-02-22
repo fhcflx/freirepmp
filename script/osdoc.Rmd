@@ -84,7 +84,7 @@ Figura 3: tempo de seguimento.
 ```{r table2, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
 panderOptions('table.split.table', Inf)
 set.caption("Histologia dos tumores")
-pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
+pander(Freq(histo)[,-4], style = 'rmarkdown')
 ```
 
 ```{r Figura4, fig.path='../fig/', fig.height=8, fig.width=7}
