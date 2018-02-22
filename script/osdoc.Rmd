@@ -36,10 +36,25 @@ snc=snc[which(topo!="Calota craniana"&histo!="Histiocitose"&histo!="Hemangioperi
 &histo!="Neuroblastoma"&histo!="Outros"),]
 snc=droplevels(snc)
 detach(snc)
+attach(snc)
+require(DescTools)
+snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
+2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
+levels(snc$histo.group)=c("Outros tumores benignos","Glioma de alto grau",
+"Glioma de baixo grau","Outros tumores malignos","Tumores de células germinativas",
+"Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários",
+"Sem histologia","Tumor teratóide-rabdóide")
+snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
+2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
+levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
+who.score=summary(snc$who.g)[c(1,3,2,4,5)]
+snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,2,6,6,6,6,4,1,4,4,4,4,5,5,5,5,4))
+levels(snc$topo.group)=c("Outros locais","Cerebelo","Supratentorial (linha média)","Supratentorial (extra-axial)","Tronco cerebral","Medula espinhal")
+detach(snc)
+attach(snc)
 ```
 
 ```{r Figura1, fig.path='../fig/', fig.height=6, fig.width=5}
-attach(snc)
 barplot(summary(as.factor(sex)),names.arg=c("masculino","feminino"),
 xlab="Sexo",width=0.5,xlim=c(0,1.7),space=0.5,col=0)
 ```
@@ -54,7 +69,6 @@ frame.plot=F)
 Figura 2: idade dos pacientes ao diagnóstico.
 
 ```{r table1, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
-require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Procedência dos pacientes")
 pander(Freq(origin,ord='desc'), style = 'rmarkdown')
@@ -67,52 +81,36 @@ frame.plot=F)
 Figura 3: tempo de seguimento.
 
 ```{r table2, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
-require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Histologia dos tumores")
 pander(Freq(histo,ord='desc')[,-4], style = 'rmarkdown')
 ```
 
-```{r Figura4, fig.path='../fig/', fig.height=6.5, fig.width=7}
-require(reshape)
-snc$histo.group=combine_factor(histo,c(1,2,3,3,3,3,4,5,5,1,5,6,7,4,8,8,8,8,5,
-2,8,1,9,9,9,9,10,4,1,1,1,1,8,8,1,10,4,1,11,5,10,12,3))
-levels(snc$histo.group)=c("Outros tumores benignos","Glioma de alto grau",
-"Glioma de baixo grau","Outros tumores malignos","Tumores de células germinativas",
-"Ependimoma","Ependimoma anaplásico","Outros gliomas","Meduloblastoma","Outros tumores embrionários",
-"Sem histologia","Tumor teratóide-rabdóide")
+```{r Figura4, fig.path='../fig/', fig.height=7, fig.width=7}
 par(las=1)
 par(mar=c(5,11,4,2))
-barplot(sort(summary(snc$histo.group)*100/sum(summary(snc$histo.group)),decreasing=T),
+barplot(sort(summary(histo.group)*100/sum(summary(histo.group)),decreasing=T),
 col="white",horiz=T,cex.names=0.8)
 ```
 
 Figura 4: grupos segundo a histologia (%).
 
 ```{r Figura5, fig.path='../fig/', fig.height=7.5, fig.width=7}
-snc$who.g=combine_factor(histo,c(1,2,3,1,3,1,4,4,4,1,4,3,2,4,1,2,3,1,4,
-2,3,1,4,4,4,4,4,4,1,3,1,1,3,2,1,4,4,1,5,4,4,4,3))
-levels(snc$who.g)=c("I","III","II","IV","Sem histologia")
-who.score=summary(snc$who.g)[c(1,3,2,4,5)]
 barplot(who.score*100/sum(who.score),col="white",cex.names=0.8)
 ```
 
 Figura 5: classificação segundo o grau da OMS (%).
 
 ```{r table3, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
-require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Topografia dos tumores")
 pander(Freq(topo,ord='desc')[1:3], style = 'rmarkdown')
 ```
 
 ```{r Figura6, fig.path='../fig/', fig.height=7, fig.width=7}
-require(reshape)
-snc$topo.group=combine_factor(topo,c(1,1,2,2,2,3,3,3,3,4,2,6,6,6,6,4,1,4,4,4,4,5,5,5,5,4))
-levels(snc$topo.group)=c("Outros locais","Cerebelo","Supratentorial (linha média)","Supratentorial (extra-axial)","Tronco cerebral","Medula espinhal")
 par(las=1)
 par(mar=c(5,11,4,2))
-barplot(sort(summary(snc$topo.group)*100/sum(summary(snc$topo.group)),decreasing=T),
+barplot(sort(summary(topo.group)*100/sum(summary(topo.group)),decreasing=T),
 col="white",horiz=T,cex.names=0.8)
 ```
 
@@ -130,7 +128,6 @@ barplot(ecog.score*100/sum(ecog.score),col="white")
 ```
 
 ```{r table4, echo=TRUE, message=FALSE, warnings=FALSE, results='asis'}
-require(DescTools)
 panderOptions('table.split.table', Inf)
 set.caption("Tratamentos utilizados como primeira linha")
 pander(Freq(ct1,ord='desc'), style = 'rmarkdown')
