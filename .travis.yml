@@ -8,9 +8,9 @@ addons:
        - libcurl4-openssl-dev
        - libxml2-dev
 
-before_script:
-- chmod a+x script/cibuild
-- script/cibuild
+#before_script:
+#- chmod a+x script/cibuild
+#- script/cibuild
 
 script:
 - Rscript R/build.R
@@ -18,3 +18,6 @@ script:
 after_success:
 - chmod a+x script/afterbuild
 - script/afterbuild
+
+deploy:
+- github_token: $GITHUB_TOKEN  
