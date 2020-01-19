@@ -8,14 +8,13 @@ addons:
        - libcurl4-openssl-dev
        - libxml2-dev
 
-#before_script:
-#- chmod a+x script/cibuild
-#- script/cibuild
+before_script:
+- chmod a+x script/cibuild
+- script/cibuild
 
 script:
 - Rscript R/build.R
  
 after_success:
-- github_token: $GITHUB_TOKEN 
 - chmod a+x script/afterbuild
 - script/afterbuild 
