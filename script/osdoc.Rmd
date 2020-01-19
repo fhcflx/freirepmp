@@ -156,3 +156,5 @@ grid.draw(v)
 Figura 8: número de pacientes que foram tratados com cirurgia, radioterapia e/ou quimioterapia.
 
 _Dados e código para replicação estão disponíveis no repositório do GitHub do projeto_
+
+_*Fora Bolsonaro*_
